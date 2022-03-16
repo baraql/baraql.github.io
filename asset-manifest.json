@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b1b9716.css",
-    "main.js": "/static/js/main.603f2fb0.js",
-    "static/js/415.fc063c41.chunk.js": "/static/js/415.fc063c41.chunk.js",
-    "static/js/787.f6e65957.chunk.js": "/static/js/787.f6e65957.chunk.js",
-    "static/media/baraq-lipshitz_resume.pdf": "/static/media/baraq-lipshitz_resume.9e5413c69d963b044d45.pdf",
-    "index.html": "/index.html",
-    "main.1b1b9716.css.map": "/static/css/main.1b1b9716.css.map",
-    "main.603f2fb0.js.map": "/static/js/main.603f2fb0.js.map",
-    "415.fc063c41.chunk.js.map": "/static/js/415.fc063c41.chunk.js.map",
-    "787.f6e65957.chunk.js.map": "/static/js/787.f6e65957.chunk.js.map"
+    "main.css": "/website/static/css/main.1b1b9716.css",
+    "main.js": "/website/static/js/main.3eb7432b.js",
+    "static/js/415.fc063c41.chunk.js": "/website/static/js/415.fc063c41.chunk.js",
+    "static/js/787.f6e65957.chunk.js": "/website/static/js/787.f6e65957.chunk.js",
+    "static/media/baraq-lipshitz_resume.pdf": "/website/static/media/baraq-lipshitz_resume.9e5413c69d963b044d45.pdf",
+    "index.html": "/website/index.html",
+    "main.1b1b9716.css.map": "/website/static/css/main.1b1b9716.css.map",
+    "main.3eb7432b.js.map": "/website/static/js/main.3eb7432b.js.map",
+    "415.fc063c41.chunk.js.map": "/website/static/js/415.fc063c41.chunk.js.map",
+    "787.f6e65957.chunk.js.map": "/website/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b1b9716.css",
-    "static/js/main.603f2fb0.js"
+    "static/js/main.3eb7432b.js"
   ]
 }
