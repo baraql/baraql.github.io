@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "./static/css/main.1b1b9716.css",
-    "main.js": "./static/js/main.c77ea96c.js",
+    "main.js": "./static/js/main.1f69a619.js",
     "static/js/415.4d6acbeb.chunk.js": "./static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
-    "static/media/tkd1.png": "./static/media/tkd1.cf0ca4dc6fb424a0e960.png",
-    "static/media/face.png": "./static/media/face.67f79c35b6c59969ec21.png",
+    "static/media/face.png": "./static/media/face.e895b7d6fc9606c3c0d6.png",
     "static/media/tkd2.jpeg": "./static/media/tkd2.3bd986d420ef0e4d095b.jpeg",
+    "static/media/tkd1.jpg": "./static/media/tkd1.6a9a1ed8f83a81ca15ee.jpg",
     "static/media/hackathon1.png": "./static/media/hackathon1.a7eb743978bd898a91d6.png",
     "static/media/baraq-lipshitz_resume.pdf": "./static/media/baraq-lipshitz_resume.9e5413c69d963b044d45.pdf",
     "index.html": "./index.html",
     "main.1b1b9716.css.map": "./static/css/main.1b1b9716.css.map",
-    "main.c77ea96c.js.map": "./static/js/main.c77ea96c.js.map",
+    "main.1f69a619.js.map": "./static/js/main.1f69a619.js.map",
     "415.4d6acbeb.chunk.js.map": "./static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b1b9716.css",
-    "static/js/main.c77ea96c.js"
+    "static/js/main.1f69a619.js"
   ]
 }
