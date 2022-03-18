@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.1b1b9716.css",
-    "main.js": "/static/js/main.36eaa72a.js",
+    "main.js": "/static/js/main.5185df50.js",
     "static/js/415.fc063c41.chunk.js": "/static/js/415.fc063c41.chunk.js",
     "static/js/787.f6e65957.chunk.js": "/static/js/787.f6e65957.chunk.js",
+    "static/media/face.png": "/static/media/face.67f79c35b6c59969ec21.png",
     "static/media/baraq-lipshitz_resume.pdf": "/static/media/baraq-lipshitz_resume.9e5413c69d963b044d45.pdf",
     "index.html": "/index.html",
     "main.1b1b9716.css.map": "/static/css/main.1b1b9716.css.map",
-    "main.36eaa72a.js.map": "/static/js/main.36eaa72a.js.map",
+    "main.5185df50.js.map": "/static/js/main.5185df50.js.map",
     "415.fc063c41.chunk.js.map": "/static/js/415.fc063c41.chunk.js.map",
     "787.f6e65957.chunk.js.map": "/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b1b9716.css",
-    "static/js/main.36eaa72a.js"
+    "static/js/main.5185df50.js"
   ]
 }
