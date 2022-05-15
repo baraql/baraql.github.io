@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.9407c268.css",
-    "main.js": "./static/js/main.01ec1846.js",
+    "main.css": "./static/css/main.8538814a.css",
+    "main.js": "./static/js/main.bb8d5abe.js",
     "static/js/415.4d6acbeb.chunk.js": "./static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/fitmeSC1.png": "./static/media/fitmeSC1.82344ef1bdd1eba584b6.png",
@@ -11,14 +11,15 @@
     "static/media/hackathon1.png": "./static/media/hackathon1.a7eb743978bd898a91d6.png",
     "static/media/baraq-lipshitz_resume.pdf": "./static/media/baraq-lipshitz_resume.9e5413c69d963b044d45.pdf",
     "static/media/fitmeLogo.png": "./static/media/fitmeLogo.faaf0c3dcfad0e40a5fb.png",
+    "static/media/appstorebutton.svg": "./static/media/appstorebutton.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "./index.html",
-    "main.9407c268.css.map": "./static/css/main.9407c268.css.map",
-    "main.01ec1846.js.map": "./static/js/main.01ec1846.js.map",
+    "main.8538814a.css.map": "./static/css/main.8538814a.css.map",
+    "main.bb8d5abe.js.map": "./static/js/main.bb8d5abe.js.map",
     "415.4d6acbeb.chunk.js.map": "./static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9407c268.css",
-    "static/js/main.01ec1846.js"
+    "static/css/main.8538814a.css",
+    "static/js/main.bb8d5abe.js"
   ]
 }
