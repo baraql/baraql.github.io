@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.050372cb.css",
-    "main.js": "./static/js/main.fcfa5d45.js",
+    "main.js": "./static/js/main.eb83c6c8.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/background.gif": "./static/media/background.93cfb6f2cd2f8ad323ef.gif",
     "static/media/fitmeSC1.png": "./static/media/fitmeSC1.82344ef1bdd1eba584b6.png",
@@ -15,11 +15,11 @@
     "static/media/appstorebutton.svg": "./static/media/appstorebutton.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "./index.html",
     "main.050372cb.css.map": "./static/css/main.050372cb.css.map",
-    "main.fcfa5d45.js.map": "./static/js/main.fcfa5d45.js.map",
+    "main.eb83c6c8.js.map": "./static/js/main.eb83c6c8.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.050372cb.css",
-    "static/js/main.fcfa5d45.js"
+    "static/js/main.eb83c6c8.js"
   ]
 }
