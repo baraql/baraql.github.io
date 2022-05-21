@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.08185f98.css",
-    "main.js": "./static/js/main.c6ef84ad.js",
+    "main.css": "./static/css/main.8100f2da.css",
+    "main.js": "./static/js/main.3f807884.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/background.gif": "./static/media/background.93cfb6f2cd2f8ad323ef.gif",
     "static/media/fitmeSC1.png": "./static/media/fitmeSC1.82344ef1bdd1eba584b6.png",
@@ -9,16 +9,16 @@
     "static/media/tkd2.jpeg": "./static/media/tkd2.3bd986d420ef0e4d095b.jpeg",
     "static/media/tkd1.jpg": "./static/media/tkd1.6a9a1ed8f83a81ca15ee.jpg",
     "static/media/hackathon1.png": "./static/media/hackathon1.a7eb743978bd898a91d6.png",
-    "static/media/baraq-lipshitz_resume.pdf": "./static/media/baraq-lipshitz_resume.9e5413c69d963b044d45.pdf",
+    "static/media/baraq-lipshitz_resume.pdf": "./static/media/baraq-lipshitz_resume.311e62799860d3afe51e.pdf",
     "static/media/fitmeLogo.png": "./static/media/fitmeLogo.faaf0c3dcfad0e40a5fb.png",
     "static/media/appstorebutton.svg": "./static/media/appstorebutton.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "./index.html",
-    "main.08185f98.css.map": "./static/css/main.08185f98.css.map",
-    "main.c6ef84ad.js.map": "./static/js/main.c6ef84ad.js.map",
+    "main.8100f2da.css.map": "./static/css/main.8100f2da.css.map",
+    "main.3f807884.js.map": "./static/js/main.3f807884.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08185f98.css",
-    "static/js/main.c6ef84ad.js"
+    "static/css/main.8100f2da.css",
+    "static/js/main.3f807884.js"
   ]
 }
