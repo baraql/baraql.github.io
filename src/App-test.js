@@ -243,9 +243,9 @@ function App() {
           backgroundColor: '#ffffff',
           borderRadius: '0.8vw',
           paddingBottom: '3vw',
-          width: '33vw',
+          width: '38vw',
           // marginRight: '0',
-          height: '18vw',
+          height: '20vw',
           boxShadow: '1vw 1vw 2.5vw #1a1a1a',
           zIndex: '1',
           fontSize: '1.2vw',
@@ -297,9 +297,9 @@ function App() {
 
           <div style={{ marginLeft: '0.3vw' }}>
             <p>/*</p>
-            <p>* I'm interested in mobile application</p>
-            <p>* development, fintech,</p>
-            <p>* and artificial intelligence.</p>
+            <p>* I'm entrepreneurially motivated and </p>
+            <p>* interested in mobile application development,</p>
+            <p>* fintech, and artificial intelligence.</p>
             <p>*/</p>
             <br></br>
             <p>><a href="mailto:baraq@nyu.edu" target="_blank" rel="noopener noreferrer">baraq@nyu.edu</a></p>

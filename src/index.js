@@ -2,11 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import About from './About';
+import Projects from './Projects';
 import reportWebVitals from './reportWebVitals';
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <AnimatePresence> */}
+    <HashRouter basename="/">
+      {/* <Navigation /> */}
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects/*" element={<Projects />} />
+      </Routes>
+    </HashRouter>
+    {/* </AnimatePresence> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
