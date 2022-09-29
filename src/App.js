@@ -136,10 +136,6 @@ function Console(props) { // TODO make it look like a mac terminal window when y
                   loop: true,
                   cursor: "",
                 }}
-              /* onselectstart={(e) => {
-                console.log('selected!')
-              }
-              } */
               />
             </div>
           </div> : null}
