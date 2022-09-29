@@ -30,7 +30,6 @@ function Console(props) { // TODO make it look like a mac terminal window when y
       borderRadius: '0.8vw',
       paddingBottom: '3vw',
       width: '35vw',
-      // marginRight: '0',
       height: '20vw',
       boxShadow: '1vw 1vw 2.5vw #1a1a1a',
       zIndex: '1',
