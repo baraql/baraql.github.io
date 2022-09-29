@@ -192,7 +192,7 @@ function Console(props) { // TODO make it look like a mac terminal window when y
                   window.location.href = '/#/about';
                 else if (inputText == "resume")
                   window.open(
-                    'http://baraql.github.io/static/media/baraq_lipshitz_resume.311e62799860d3afe51e.pdf', "_blank");
+                    'http://baraql.github.io/static/media/baraq_lipshitz_resume.cc543659bf0cfd85c16b.pdf', "_blank");
 
                 else if (inputText == "projects")
                   window.location.href = '/#/projects';
