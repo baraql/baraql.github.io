@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.050372cb.css",
-    "main.js": "./static/js/main.b12773db.js",
+    "main.js": "./static/js/main.9588f2c9.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/background.gif": "./static/media/background.93cfb6f2cd2f8ad323ef.gif",
     "static/media/fitmeSC1.png": "./static/media/fitmeSC1.82344ef1bdd1eba584b6.png",
@@ -12,14 +12,15 @@
     "static/media/hackathon1.png": "./static/media/hackathon1.a7eb743978bd898a91d6.png",
     "static/media/baraq_lipshitz_resume.pdf": "./static/media/baraq_lipshitz_resume.cc543659bf0cfd85c16b.pdf",
     "static/media/fitmeLogo.png": "./static/media/fitmeLogo.faaf0c3dcfad0e40a5fb.png",
+    "static/media/fTrainIcon.png": "./static/media/fTrainIcon.c5f2aac9737bc0da2f58.png",
     "static/media/appstorebutton.svg": "./static/media/appstorebutton.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "./index.html",
     "main.050372cb.css.map": "./static/css/main.050372cb.css.map",
-    "main.b12773db.js.map": "./static/js/main.b12773db.js.map",
+    "main.9588f2c9.js.map": "./static/js/main.9588f2c9.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.050372cb.css",
-    "static/js/main.b12773db.js"
+    "static/js/main.9588f2c9.js"
   ]
 }
