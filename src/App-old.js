@@ -17,8 +17,8 @@ import Typewriter from "typewriter-effect";
 // import resumePDF from './assets/baraq-lipshitz_resume.pdf'
 import face from './assets/face.png';
 import { Link } from 'react-router-dom';
-import backgroundVideo from "./assets/background.mp4";
-import backgroundImage from './assets/backgroundposter.png';
+//import backgroundVideo from "./assets/background.mp4";
+import backgroundImage from './assets/background.gif';
 
 var app = document.getElementById('app');
 
@@ -226,9 +226,9 @@ function App() {
         backgroundRepeat: 'no-repeat' */
       }}>
         <div style={{ position: 'absolute', width: '100vw', zIndex: '-1' }}>
-          <video autoPlay loop muted poster={backgroundImage} style={{ width: '100vw' }}>
+          {/* <video autoPlay loop muted poster={backgroundImage} style={{ width: '100vw' }}>
             <source src={backgroundVideo} type='video/mp4' />
-          </video>
+          </video> */}
         </div>
         <section>
           <div class="fixed-div" style={{ zIndex: '5', left: '2vw', top: '3vh', height: '48px', paddingTop: '20px', }}>

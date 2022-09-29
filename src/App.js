@@ -49,9 +49,9 @@ function Console(props) { // TODO make it look like a mac terminal window when y
           marginLeft: '0.55vw',
           height: '0.85vw',
           width: '0.85vw',
-          // backgroundColor: '#FF605C',
+          backgroundColor: '#FF605C',
           // backgroundColor: '#e85ae8',
-          backgroundColor: '#d36fd3',
+          // backgroundColor: '#d36fd3',
           borderRadius: '50%',
           display: 'inline-block',
         }}></span>
@@ -71,9 +71,9 @@ function Console(props) { // TODO make it look like a mac terminal window when y
           marginLeft: '0.55vw',
           height: '0.85vw',
           width: '0.85vw',
-          // backgroundColor: '#00CA4E',
+          backgroundColor: '#00CA4E',
           // backgroundColor: '#72d6d1',
-          backgroundColor: '#81c7c3',
+          // backgroundColor: '#81c7c3',
           borderRadius: '50%',
           display: 'inline-block',
         }}></span>
@@ -197,7 +197,7 @@ function Console(props) { // TODO make it look like a mac terminal window when y
                   window.location.href = '/#/about';
                 else if (inputText == "resume")
                   window.open(
-                    'http://baraql.github.io/static/media/baraq-lipshitz_resume.311e62799860d3afe51e.pdf', "_blank");
+                    'http://baraql.github.io/static/media/baraq_lipshitz_resume.311e62799860d3afe51e.pdf', "_blank");
 
                 else if (inputText == "projects")
                   window.location.href = '/#/projects';
@@ -264,10 +264,10 @@ function App() {
               marginLeft: '0.55vw',
               height: '0.85vw',
               width: '0.85vw',
-              // backgroundColor: '#FF605C',
+              backgroundColor: '#FF605C',
               // backgroundColor: 'rgb(243, 96, 244)',
               // backgroundColor: '#e85ae8',
-              backgroundColor: '#d36fd3',
+              // backgroundColor: '#d36fd3',
               borderRadius: '50%',
               display: 'inline-block',
             }}></span>
@@ -287,9 +287,9 @@ function App() {
               marginLeft: '0.55vw',
               height: '0.85vw',
               width: '0.85vw',
-              // backgroundColor: '#00CA4E',
+              backgroundColor: '#00CA4E',
               // backgroundColor: 'rgb(118, 228, 222)',
-              backgroundColor: '#72d6d1',
+              // backgroundColor: '#72d6d1',
               borderRadius: '50%',
               display: 'inline-block',
             }}></span>

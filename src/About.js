@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import './About.css';
-import resumePDF from './assets/baraq-lipshitz_resume.pdf'
+import resumePDF from './assets/baraq_lipshitz_resume.pdf'
 import { Link } from 'react-router-dom'
 import tkd1 from './assets/tkd1.jpg';
 import tkd2 from './assets/tkd2.jpeg';
