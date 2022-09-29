@@ -6,6 +6,7 @@ import './Projects.css';
 import { Link } from 'react-router-dom';
 import fitmeLogo from "./assets/fitmeLogo.png";
 import lightningLogo from "./assets/lightning.png";
+import fTrainIcon from "./assets/fTrainIcon.png"
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Fitme from './Fitme';
 import LightningTech from './LightningTech';
@@ -24,7 +25,11 @@ function AppItem(props) {
         e.preventDefault();
         setDown(false);
         console.log(down);
-        window.location.href = '/#/projects/' + props.projectName; // Make 404 page?
+        if (props.link != null) {
+            window.open(props.link, "_blank");
+        } else {
+            window.location.href = '/#/projects/' + props.projectName; // Make 404 page?
+        }
     }
 
     return (
@@ -131,6 +136,7 @@ function ProjectMenu() {
                         <CarouselSpace width="1.5vw" />
                         <AppItem image={fitmeLogo} text="Fitme" projectName='fitme' />
                         <AppItem image={lightningLogo} text="Lightning Tech" projectName='lightningtech' />
+                        <AppItem image={fTrainIcon} text="NYC At A Glance" link='https://github.com/baraql/NYCAtAGlance' />
                         {/* <CarouselSpace width="2vw" /> */}
                         {/* <CarouselItem color="#00ff00" /> */}
                         {/* <CarouselSpace width="2vw" /> */}
