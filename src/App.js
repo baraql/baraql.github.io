@@ -14,9 +14,12 @@ import Typewriter from "typewriter-effect";
 import face from './assets/face.png';
 import { Link } from 'react-router-dom';
 import backgroundVideo from "./assets/background.gif";
+import backgroundMP4 from "./assets/background.mp4"
 // import backgroundImage from './assets/backgroundposter.png';
 // import YouTube from 'react-youtube';
-
+if (process.env.NODE_ENV === 'development') {
+  import('@impulse.dev/runtime').then((impulse) => impulse.run())
+}
 var app = document.getElementById('app');
 
 // TODO add shower
@@ -215,10 +218,11 @@ function App() {
   return (
     <div style={{ overflow: 'hidden', height: '100vh', width: '100vw', backgroundColor: 'black' }}>
       {/* <video autoPlay loop muted id="bgVideo" style={{ zIndex: '0', opacity: '0.5' }}>
-        <source src={backgroundVideo} type='video/mp4' />
+        <source src={backgroundMP4} type='video/mp4' />
       </video> */}
-      <img src={backgroundVideo} id="bgVideo" style={{ zIndex: '0', opacity: '0.5' }} />
-      {/* <Background /> */}
+      <video src={backgroundMP4} onloadedmetadata="this.muted = true" playsinline autoplay muted loop id="bgVideo"></video>
+
+      {/* <img src={backgroundVideo} id="bgVideo" style={{ zIndex: '0', opacity: '0.5' }} /> */}
 
       <div style={{ height: '100vh', width: '100vw', color: 'black', position: 'absolute' }}></div>
       {/* This is the background */}
@@ -233,6 +237,7 @@ function App() {
       {/* This is the face */}
       {/* <div className="center-screen">, style={{ position: 'absolute' }} */}
       {/* <div > */}
+
       <Draggable style={{ position: 'absolute' }} defaultPosition={{ x: window.innerWidth / 5, y: window.innerHeight * 0.30 }}>
         <div className="codebox-input" style={{
           backgroundColor: '#ffffff',
