@@ -10,11 +10,11 @@ import Plx from 'react-plx';
 import fitmeSC1 from './assets/fitmeSC1.png'
 import Typewriter from "typewriter-effect";
 import appStoreButton from "./assets/appstorebutton.svg"
+import usePageTracking from "./usePageTracking";
 
 function WebsitePreview(props) {
   const handleClick = () => {
     console.log("hi");
-    window.open("http://twitter.com/saigowthamr");
   };
 
   return (
@@ -31,6 +31,8 @@ function WebsitePreview(props) {
 }
 
 function LightningTech() {
+  usePageTracking();
+
   return (
     <>
       <div class="fixed-div" style={{ zIndex: '1', left: '2vw', top: '3vh' }}>
