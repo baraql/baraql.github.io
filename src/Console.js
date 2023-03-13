@@ -196,3 +196,5 @@ function Console(props) { // TODO make it look like a mac terminal window when y
         </div >
     )
 }
+
+export default Console;

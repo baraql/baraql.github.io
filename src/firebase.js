@@ -24,3 +24,5 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 logEvent(analytics, 'test');
+
+export default firebaseConfig;

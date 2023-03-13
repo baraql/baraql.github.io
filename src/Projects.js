@@ -1,4 +1,5 @@
 import React, {
+    useEffect,
     useState
 } from "react";
 import { Text } from "react-native";
@@ -10,7 +11,7 @@ import fTrainIcon from "./assets/fTrainIcon.png"
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Fitme from './Fitme';
 import LightningTech from './LightningTech';
-
+import usePageTracking from "./usePageTracking";
 
 function AppItem(props) {
     const [down, setDown] = useState(false);
@@ -149,7 +150,11 @@ function ProjectMenu() {
     )
 }
 
+
 function Projects() {
+    usePageTracking();
+
+
     return (
         <>
             <Routes>

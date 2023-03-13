@@ -1,7 +1,17 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+
+// const usePageViewTracking = () => {
+//     const location = useLocation();
+
+//     useEffect(() => {
+//         ReactGA.pageview(location.pathname + location.search);
+//     }, [location]);
+// };
 
 function Navigation() {
+    // usePageViewTracking();
+
     return (
         <div className="navigation">
             <nav className="navbar navbar-expand navbar-dark bg-dark">

@@ -7,6 +7,7 @@ import tkd1 from './assets/tkd1.jpg';
 import tkd2 from './assets/tkd2.jpeg';
 import hackathon1 from './assets/hackathon1.png';
 // background-image: url("./assets/tkd1.png");
+import usePageTracking from "./usePageTracking";
 
 <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Poppins"></link>
@@ -55,6 +56,8 @@ function Article(props) {
 
 // TODO Add interactive/interesting/animated background
 function About() {
+    usePageTracking();
+
     return (
         <div className="about">
 
