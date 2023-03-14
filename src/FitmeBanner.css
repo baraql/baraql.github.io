@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.image {
+    width: 4rem;
+    height: 4rem;
+    background-color: gray;
+    margin-right: 1rem;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

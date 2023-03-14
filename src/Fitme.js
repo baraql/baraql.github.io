@@ -10,10 +10,8 @@ import fitmeSC1 from './assets/fitmeSC1.png'
 import fitmeSC2 from './assets/fitmeSC2.png'
 import Typewriter from "typewriter-effect";
 import appStoreButton from "./assets/appstorebutton.svg"
-import usePageTracking from "./usePageTracking";
 
 function Fitme() {
-  usePageTracking();
   const scroll = useScrollHandler();
 
   return (
