@@ -176,13 +176,13 @@ function Console(props) { // TODO make it look like a mac terminal window when y
                                 console.log('submitted');
 
                                 if (inputText == "about")
-                                    window.location.href = '/#/about';
+                                    window.location.href = '/about';
                                 else if (inputText == "resume")
                                     window.open(
                                         'https://github.com/baraql/baraql.github.io/raw/master/src/assets/baraq_lipshitz_resume.pdf', "_blank");
 
                                 else if (inputText == "projects")
-                                    window.location.href = '/#/projects';
+                                    window.location.href = '/projects';
 
                                 setInputText("");
                                 document.getElementById("consoleTextInput").focus();

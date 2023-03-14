@@ -10,7 +10,6 @@ import Plx from 'react-plx';
 import fitmeSC1 from './assets/fitmeSC1.png'
 import Typewriter from "typewriter-effect";
 import appStoreButton from "./assets/appstorebutton.svg"
-import usePageTracking from "./usePageTracking";
 
 function WebsitePreview(props) {
   const handleClick = () => {
@@ -31,7 +30,6 @@ function WebsitePreview(props) {
 }
 
 function LightningTech() {
-  usePageTracking();
 
   return (
     <>

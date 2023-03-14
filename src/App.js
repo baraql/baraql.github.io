@@ -4,7 +4,6 @@ import './App.css';
 import React, { useState, useEffect } from "react";
 import firebaseConfig from './firebase.js';
 import Start from "./Start";
-import usePageTracking from './usePageTracking';
 // initializeAnalytics();
 
 const app = firebaseConfig.app;
@@ -22,7 +21,6 @@ const analytics = firebaseConfig.analytics;
 
 //Floating animations hovering up and down
 function App() {
-  usePageTracking();
 
   return (
     <Start />
