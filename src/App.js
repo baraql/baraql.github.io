@@ -4,11 +4,12 @@ import './App.css';
 import React, { useState, useEffect } from "react";
 import firebaseConfig from './firebase.js';
 import Start from "./Start";
-// initializeAnalytics();
+import Home from './Home';
 
+// initializeAnalytics();
+// import './rainbow.css'
 const app = firebaseConfig.app;
 const analytics = firebaseConfig.analytics;
-
 
 // import backgroundImage from './assets/backgroundposter.png';
 // import YouTube from 'react-youtube';
@@ -23,7 +24,7 @@ const analytics = firebaseConfig.analytics;
 function App() {
 
   return (
-    <Start />
+    <Home />
   );
 }
 

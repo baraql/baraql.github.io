@@ -5,29 +5,15 @@ import Console from "./Console"
 import face from './assets/face.png';
 import { Link } from 'react-router-dom';
 import backgroundVideo from "./assets/background.gif";
+import './rainbow.css'
 
 function Start() {
     return (
-        <div style={{ overflow: 'hidden', height: '100vh', width: '100vw', backgroundColor: 'black' }}>
-            {/* <video autoPlay loop muted id="bgVideo" style={{ zIndex: '0', opacity: '0.5' }}>
-          <source src={backgroundVideo} type='video/mp4' />
-        </video> */}
-            <img src={backgroundVideo} id="bgVideo" style={{ zIndex: '0', opacity: '0.5' }} />
-            {/* <Background /> */}
-
+        <div style={{ overflow: 'hidden', height: '100vh', width: '100vw' }} class='rainbowWrapper'>
             <div style={{ height: '100vh', width: '100vw', color: 'black', position: 'absolute' }}></div>
-            {/* This is the background */}
-            {/* <div style={{ position: 'absolute', width: '100vw', height: '100vh', zIndex: '-1' }}> */}
-
-
-            {/* This is the logo */}
             <div style={{ position: 'absolute', paddingLeft: '5px', paddingLeft: '2vw', paddingTop: '3vh', }}>
                 <Link to='/' className="logo" style={{ color: 'white', }}> baraq </Link>
             </div>
-
-            {/* This is the face */}
-            {/* <div className="center-screen">, style={{ position: 'absolute' }} */}
-            {/* <div > */}
             <Draggable style={{ position: 'absolute' }} defaultPosition={{ x: window.innerWidth / 5, y: window.innerHeight * 0.30 }}>
                 <div className="codebox-input" style={{
                     backgroundColor: '#ffffff',
@@ -121,19 +107,12 @@ function Start() {
                     borderRadius: '1.04vw',
                     backgroundColor: '#dedede',
                     paddingTop: '10px',
-                    zIndex: '5'
+                    zIndex: '5',
+                    boxShadow: '1vw 1vw 2.5vw #1a1a1a',
                 }}
                 />
             </Draggable>
 
-            {/* </div> */}
-
-            {/* This is the console */}
-            {/* <div style> */}
-
-            {/* </div> */}
-
-            {/* <div style={{ color: 'black', opacity: '1', zIndex: '10', height: '100vh', width: '100vw' }}></div> */}
         </div >
     );
 }
