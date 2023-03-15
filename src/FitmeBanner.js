@@ -6,10 +6,13 @@ import {
     SafeAreaView,
     TextInput,
 } from "react-native";
-
+import './FitmeBanner.css'
 function Home() {
     return (
-        <Text>Heeeello</Text>
+        <div class="container">
+            <img src="image.jpg" alt="Image description" />
+            <p class="text">Fitme</p>
+        </div>
     );
 }
 

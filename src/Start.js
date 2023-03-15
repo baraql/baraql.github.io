@@ -9,8 +9,9 @@ import './rainbow.css'
 
 function Start() {
     return (
-        <div style={{ overflow: 'hidden', height: '100vh', width: '100vw' }} class='rainbowWrapper'>
-            <div style={{ height: '100vh', width: '100vw', color: 'black', position: 'absolute' }}></div>
+        <div style={{
+            width: '100vw', height: '118vh', clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0% 100%)'
+        }} class='rainbowWrapper'>
             <div style={{ position: 'absolute', paddingLeft: '5px', paddingLeft: '2vw', paddingTop: '3vh', }}>
                 <Link to='/' className="logo" style={{ color: 'white', }}> baraq </Link>
             </div>

@@ -12,12 +12,17 @@
     text-transform: uppercase;
 }
 
+.text {
+    font-family: "Custom Font", sans-serif;
+}
 .image {
     width: 4rem;
     height: 4rem;
     background-color: gray;
     margin-right: 1rem;
+    border-radius: 10px;
 }
+    
 
 @media (max-width: 600px) {
     .content {

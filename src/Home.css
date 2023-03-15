@@ -1,0 +1,9 @@
+.slanted {
+    /* background-color: red; */
+    /* height: 500px; */
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%); */
+    /* clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%); */
+    border-radius: 30px;
+    width: 50vw;
+    height: 100vh;
+}
