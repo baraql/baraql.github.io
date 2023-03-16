@@ -272,8 +272,6 @@ function FourthDiv() {
         <div className="statItem" style={{ marginRight: '30vw', marginTop: '5vw' }}>Constructed with Google Cloud Platform Firebase (NoSQL).</div>
         <div className="statItem" style={{ marginLeft: '30vw', marginTop: '5vw' }}>Integrated Sign in With Apple, Google, and email.</div>
         <div className="statItem" style={{ marginRight: '30vw', marginTop: '5vw' }}>Learned and applied UI/UX design standards.</div>
-        {/* <Text style={{ fontSize: '60px', fontFamily: 'nunito' }}>8,000+ lines of Swift written.</Text>
-      <Text style={{ fontSize: '60px', fontFamily: 'nunito' }}>8,000+ lines of Swift written.</Text> */}
       </div>
     </>
   )
@@ -322,7 +320,6 @@ const plx1Text2 = [
         startValue: window.innerWidth,
         endValue: 900,
         property: "translateX",
-        // unit: "%",
       },
     ],
   },
@@ -334,7 +331,6 @@ const plx1Text2 = [
         startValue: 900,
         endValue: 0,
         property: "translateX",
-        // unit: "%",
       },
     ],
   },
@@ -349,7 +345,6 @@ const plx1Text3 = [
         startValue: window.innerWidth,
         endValue: 900,
         property: "translateX",
-        // unit: "%",
       },
     ],
   },
@@ -361,34 +356,12 @@ const plx1Text3 = [
         startValue: 900,
         endValue: 0,
         property: "translateX",
-        // unit: "%",
       },
     ],
   },
 ];
 
 const div1Length = 1585;
-
-// const fullDiv1 = [
-//   {
-//     start: 1000,
-//     end: div1Length,
-//     properties: [
-//       // {
-//       //   startValue: -500,
-//       //   endValue: -500 + div1Length,
-//       //   property: "translateY",
-//       //   // unit: "%",
-//       // },
-//       // {
-//       //   startValue: 1000,
-//       //   endValue: 0,
-//       //   property: "translateY",
-//       //   // unit: "%",
-//       // },
-//     ],
-//   },
-// ];
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
@@ -416,7 +389,6 @@ const plxAppLogo = [
     ],
   },
 ];
-//(((appIconSize * vw + 5) * 2) + 171.14) * .05)
 
 const plx2Image1 = [
   {
@@ -427,14 +399,7 @@ const plx2Image1 = [
         startValue: 0,
         endValue: 500,
         property: "translateY",
-        // unit: "%",
       },
-      // {
-      //   startValue: 500,
-      //   endValue: 0,
-      //   property: "translateY",
-      //   // unit: "%",
-      // },
     ],
   },
 ];

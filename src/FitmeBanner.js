@@ -2,8 +2,7 @@ import React from "react";
 import './FitmeBanner.css'
 import fitmeLogo from "./assets/fitmeLogo.png";
 import demoVideo from "./assets/profileOverlayed.mp4";
-import demoVideoPlaceholder from "./assets/profileOverlayedStillCompressed.png"
-import { Suspense } from "react";
+import demoVideoPlaceholder from "./assets/profileOverlayedStillCompressed.jpg"
 const appIconSize = 8;
 
 function Home() {

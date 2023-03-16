@@ -31,7 +31,7 @@
 }
 
 video {
-    background-image: url(assets/profileOverlayedStillCompressed.png);
+    /* background-image: url(assets/profileOverlayedStillCompressed.jpg); */
     background-repeat: no-repeat;
     /* background-size: 30px 30px; */
     background-position: center;
