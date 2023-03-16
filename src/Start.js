@@ -1,10 +1,10 @@
-import Draggable, { DraggableCore } from 'react-draggable';
+/* eslint-disable react/jsx-no-comment-textnodes */
+import Draggable from 'react-draggable';
 import './App.css';
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Console from "./Console"
 import face from './assets/face.png';
 import { Link } from 'react-router-dom';
-import backgroundVideo from "./assets/background.gif";
 import './rainbow.css'
 
 function Start() {
@@ -12,7 +12,7 @@ function Start() {
         <div style={{
             width: '100vw', height: '118vh', clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0% 100%)'
         }} class='rainbowWrapper'>
-            <div style={{ position: 'absolute', paddingLeft: '5px', paddingLeft: '2vw', paddingTop: '3vh', }}>
+            <div style={{ position: 'absolute', paddingLeft: '2vw', paddingTop: '3vh', }}>
                 <Link to='/' className="logo" style={{ color: 'white', }}> baraq </Link>
             </div>
             <Draggable style={{ position: 'absolute' }} defaultPosition={{ x: window.innerWidth / 5, y: window.innerHeight * 0.30 }}>
@@ -107,10 +107,11 @@ function Start() {
                     // aspectRatio: '1815/1679',
                     borderRadius: '1.04vw',
                     backgroundColor: '#dedede',
-                    paddingTop: '10px',
+                    // paddingTop: '10px',
                     zIndex: '5',
                     boxShadow: '1vw 1vw 2.5vw #1a1a1a',
                 }}
+                    alt="Professional headshot of Baraq Lipshitz"
                 />
             </Draggable>
 
