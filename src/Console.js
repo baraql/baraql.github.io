@@ -77,7 +77,7 @@ function Console() { // TODO make it look like a mac terminal window when you st
     var [showInput, setShowInput] = useState(false);
     var [inputText, setInputText] = useState("");
     return (
-        <div className="codebox-input" style={{
+        <div className="codebox-input code-font" style={{
             backgroundColor: '#1e1e1e',
             borderRadius: '0.8vw',
             paddingBottom: '3vw',
