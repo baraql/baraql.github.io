@@ -23,7 +23,7 @@ const analytics = firebaseConfig.analytics;
 function App() {
 
   return (
-    <Home />
+    <Home style={{ overflowX: 'hidden' }} />
   );
 }
 

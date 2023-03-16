@@ -1,9 +1,14 @@
-.container {
+.container-vertical {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-top: 5vh;
+    flex-direction: column;
+    }
+    
+    .container-horizontal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .content {
@@ -16,7 +21,6 @@
 .text {
     /* font-family: "Custom Font", sans-serif; */
         font-family: 'futura', sans-serif;
-        font-size: 72px;
 }
 .image {
     width: 4rem;
@@ -25,8 +29,42 @@
     margin-right: 1rem;
     border-radius: 10px;
 }
-    
 
+
+a.button:after {
+    display: inline-block;
+    -webkit-transform: scale(0.5, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(0.5, 1);
+    /* Firefox */
+    -ms-transform: scale(0.5, 1);
+    /* IE 9 */
+    -o-transform: scale(0.5, 1);
+    /* Opera */
+    transform: scale(0.5, 1);
+    /* W3C */
+    content: ">";
+    position: relative;
+    margin-left: 2px;
+}
+
+a.button {
+    font-family: "futura", serif;
+    text-decoration: none;
+    /* background-color: #f2f2f2; */
+    /* padding: 8px;
+    border-radius: 10px; */
+    color: black;
+}
+
+a.button:hover {
+    font-family: "futura", serif;
+    text-decoration: underline;
+    /* background-color: #f2f2f2;
+    padding: 8px; */
+    /* border-radius: 10px; */
+    color: black;
+}
 @media (max-width: 600px) {
     .content {
         flex-direction: column;

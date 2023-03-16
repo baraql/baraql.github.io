@@ -1,17 +1,76 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 import {
     Text,
     StyleSheet,
     View,
     SafeAreaView,
     TextInput,
+
 } from "react-native";
 import Typewriter from "typewriter-effect";
+
+function AutofocusingTextInput(props) {
+    const inputRef = useRef(null);
+
+    useLayoutEffect(() => {
+        var cursorFocus = function () {
+            var x = window.scrollX, y = window.scrollY;
+            inputRef.current.focus();
+            window.scrollTo(x, y);
+        }
+
+        cursorFocus();
+    }, []);
+
+    return (
+        <TextInput
+            ref={inputRef}
+            id="consoleTextInput"
+            style={{
+                fontFamily: 'monospace',
+                color: "white",
+                border: 'none',
+                outline: 'none',
+                padding: 0,
+                position: 'absolute',
+                marginTop: '0.175vw',
+                marginLeft: '0.97vw',
+                // top: '1%',
+                fontSize: '1.6vw',
+                zIndex: '1',
+            }}
+            caretHidden="true"
+            // autoFocus
+            variant="standard"
+            placeholder=""
+            // onKeyDown={handleKeyDown}
+            onChangeText={(text) => {
+                props.setInputText(text);
+            }}
+            onSubmitEditing={(e) => {
+                e.preventDefault();
+                const formattedInputText = props.inputText.toLowerCase().trim();
+                console.log("formattedInputText: " + props.inputText + ", paths: " + paths + "inputText in paths: " + props.inputText in paths);
+                if (paths.some(path => formattedInputText.includes(path))) {
+                    if (props.inputText === 'resume')
+                        window.open(
+                            'https://github.com/baraql/baraql.github.io/raw/master/src/assets/baraq_lipshitz_resume.pdf', "_blank");
+                    else
+                        window.location.href = '/#/' + props.inputText;
+                }
+                props.setInputText("");
+                document.getElementById("consoleTextInput").focus();
+
+            }}
+            value={props.inputText}
+        />
+    )
+}
 
 const paths = ['projects', 'resume', 'about'];
 
 
-function Console(props) { // TODO make it look like a mac terminal window when you start typing, make it scrollable
+function Console() { // TODO make it look like a mac terminal window when you start typing, make it scrollable
     var [showInput, setShowInput] = useState(false);
     var [inputText, setInputText] = useState("");
     return (
@@ -135,62 +194,7 @@ function Console(props) { // TODO make it look like a mac terminal window when y
                         }}>
           >
                         </div>
-                        <TextInput
-                            id="consoleTextInput"
-                            style={{
-                                fontFamily: 'monospace',
-                                color: "white",
-                                border: 'none',
-                                outline: 'none',
-                                padding: 0,
-                                position: 'absolute',
-                                marginTop: '0.175vw',
-                                marginLeft: '0.97vw',
-                                // top: '1%',
-                                fontSize: '1.6vw',
-                                zIndex: '1',
-                            }}
-                            caretHidden="true"
-                            autoFocus
-                            variant="standard"
-                            placeholder=""
-                            // onKeyDown={handleKeyDown}
-                            onChangeText={(text) => {
-                                setInputText(text);
-                            }}
-                            /*             onKeyPress={event => {
-                                          // if (event.key === 'Backspace') {
-                                          //   setInputText(inputText.substring(0, inputText.length - 1));
-                                          //   return;
-                                          // }
-                                          // if (event.key === 'Enter') {
-                                          //   console.log('hi');
-                                          //   return;
-                                          // }
-                            
-                                        }} */
-                            /* onSubmit={(e) => {
-                              console.log('submitted');
-                              e.preventDefault();
-                              setInputText("");
-                            }} */
-                            onSubmitEditing={(e) => {
-                                e.preventDefault();
-                                const formattedInputText = inputText.toLowerCase().trim();
-                                console.log("formattedInputText: " + inputText + ", paths: " + paths + "inputText in paths: " + inputText in paths);
-                                if (paths.some(path => formattedInputText.includes(path))) {
-                                    if (inputText === 'resume')
-                                        window.open(
-                                            'https://github.com/baraql/baraql.github.io/raw/master/src/assets/baraq_lipshitz_resume.pdf', "_blank");
-                                    else
-                                        window.location.href = '/#/' + inputText;
-                                }
-                                setInputText("");
-                                document.getElementById("consoleTextInput").focus();
-
-                            }}
-                            value={inputText}
-                        />
+                        <AutofocusingTextInput inputText={inputText} setInputText={setInputText} />
                     </div>
                 </div> : null}
             </div>
