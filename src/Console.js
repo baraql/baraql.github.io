@@ -14,8 +14,11 @@ function AutofocusingTextInput(props) {
 
     useLayoutEffect(() => {
         var cursorFocus = function () {
-            var x = window.scrollX, y = window.scrollY;
-            inputRef.current.focus();
+            var x = document.documentElement.scrollLeft || document.body.scrollLeft;
+            var y = document.documentElement.scrollTop || document.body.scrollTop;
+            inputRef.current.focus({
+                preventScroll: true
+            });
             window.scrollTo(x, y);
         }
 

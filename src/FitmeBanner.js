@@ -12,7 +12,7 @@ function Home() {
 
     return (
         <div className="container-horizontal" style={{ height: '100vh', marginTop: '5vh', }}>
-            <div style={{}}>
+            <div>
                 <div className="container-horizontal" style={{ height: appIconSize + 'vw', paddingBottom: '20px' }}>
                     <img src={fitmeLogo} style={{
                         borderRadius: appIconSize * .2166 + 'vw',
