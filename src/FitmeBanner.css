@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 5vh;
 }
 
 .content {
@@ -13,7 +14,9 @@
 }
 
 .text {
-    font-family: "Custom Font", sans-serif;
+    /* font-family: "Custom Font", sans-serif; */
+        font-family: 'futura', sans-serif;
+        font-size: 72px;
 }
 .image {
     width: 4rem;

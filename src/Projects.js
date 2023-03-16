@@ -11,7 +11,7 @@ import fTrainIcon from "./assets/fTrainIcon.png"
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Fitme from './Fitme';
 import LightningTech from './LightningTech';
-
+import usePageTracking from './usePageTracking'
 function AppItem(props) {
     const [down, setDown] = useState(false);
 
@@ -28,7 +28,7 @@ function AppItem(props) {
         if (props.link != null) {
             window.open(props.link, "_blank");
         } else {
-            window.location.href = '/projects/' + props.projectName; // Make 404 page?
+            window.location.href = '/#/projects/' + props.projectName; // Make 404 page?
         }
     }
 
@@ -151,7 +151,7 @@ function ProjectMenu() {
 
 
 function Projects() {
-
+    usePageTracking();
 
     return (
         <>

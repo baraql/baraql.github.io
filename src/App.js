@@ -3,7 +3,7 @@
 import './App.css';
 import React, { useState, useEffect } from "react";
 import firebaseConfig from './firebase.js';
-import Start from "./Start";
+import Home from "./Home";
 // initializeAnalytics();
 
 const app = firebaseConfig.app;
@@ -23,7 +23,7 @@ const analytics = firebaseConfig.analytics;
 function App() {
 
   return (
-    <Start />
+    <Home />
   );
 }
 

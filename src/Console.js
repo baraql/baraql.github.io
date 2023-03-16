@@ -8,6 +8,9 @@ import {
 } from "react-native";
 import Typewriter from "typewriter-effect";
 
+const paths = ['projects', 'resume', 'about'];
+
+
 function Console(props) { // TODO make it look like a mac terminal window when you start typing, make it scrollable
     var [showInput, setShowInput] = useState(false);
     var [inputText, setInputText] = useState("");
@@ -118,7 +121,7 @@ function Console(props) { // TODO make it look like a mac terminal window when y
                             <Typewriter /* className="noselect"  onmousedown="return false" onselectstart="return false"*/
                                 options={{
                                     /* strings: ['resume', 'projects', 'about', 'contact', 'help', 'game'],*/
-                                    strings: ['projects', 'resume', 'about'],
+                                    strings: paths,
                                     autoStart: true,
                                     loop: true,
                                     cursor: "",
@@ -173,17 +176,15 @@ function Console(props) { // TODO make it look like a mac terminal window when y
                             }} */
                             onSubmitEditing={(e) => {
                                 e.preventDefault();
-                                console.log('submitted');
-
-                                if (inputText == "about")
-                                    window.location.href = '/about';
-                                else if (inputText == "resume")
-                                    window.open(
-                                        'https://github.com/baraql/baraql.github.io/raw/master/src/assets/baraq_lipshitz_resume.pdf', "_blank");
-
-                                else if (inputText == "projects")
-                                    window.location.href = '/projects';
-
+                                const formattedInputText = inputText.toLowerCase().trim();
+                                console.log("formattedInputText: " + inputText + ", paths: " + paths + "inputText in paths: " + inputText in paths);
+                                if (paths.some(path => formattedInputText.includes(path))) {
+                                    if (inputText === 'resume')
+                                        window.open(
+                                            'https://github.com/baraql/baraql.github.io/raw/master/src/assets/baraq_lipshitz_resume.pdf', "_blank");
+                                    else
+                                        window.location.href = '/#/' + inputText;
+                                }
                                 setInputText("");
                                 document.getElementById("consoleTextInput").focus();
 
