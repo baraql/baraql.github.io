@@ -110,7 +110,7 @@ function FirstDiv() {
           marginTop: '1vh',
           marginLeft: '2vw',
         }}>
-          <div class="flex-row-container" style={{
+          <div className="flex-row-container" style={{
 
           }}>
             <Text style={{
@@ -143,7 +143,7 @@ function FirstDiv() {
           zIndex: '10',
         }}>
           <a href="https://apps.apple.com/us/app/fitme-outfits-made-social/id1543589747" target="_blank" rel="noopener noreferrer">
-            <img src={appStoreButton} class="noselect" style={{
+            <img src={appStoreButton} alt="Available on the Apple App Store" className="noselect" style={{
               height: '5vh',
               width: '10vw',
             }} />

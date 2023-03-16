@@ -30,7 +30,6 @@
     border-radius: 10px;
 }
 
-
 a.button:after {
     display: inline-block;
     -webkit-transform: scale(0.5, 1);
