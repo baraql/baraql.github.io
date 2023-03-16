@@ -28,11 +28,10 @@ function Home() {
                 </a>
             </div>
             <div style={{ maxHeight: '70vh', marginLeft: '6vw' }}>
-                <Suspense fallback={<img src={demoVideoPlaceholder} alt="Demo video placeholder" />}>
-                    <video autoPlay loop muted style={{ maxHeight: '70vh', marginLeft: '6vw' }}>
-                <source src={demoVideo} type='video/mp4' />
-            </video>
-                </Suspense>
+                {/* <Suspense fallback={<img src={demoVideoPlaceholder} alt="Demo video placeholder" />}> */}
+                <video autoPlay loop muted playsinline style={{ maxHeight: '70vh', marginLeft: '6vw' }} poster={demoVideoPlaceholder}>
+                    <source src={demoVideo} type='video/mp4' />
+                </video>
             </div>
         </div>
     );

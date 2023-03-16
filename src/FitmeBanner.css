@@ -30,6 +30,12 @@
     border-radius: 10px;
 }
 
+video {
+    background-image: url(assets/profileOverlayedStillCompressed.png);
+    background-repeat: no-repeat;
+    /* background-size: 30px 30px; */
+    background-position: center;
+}
 a.button:after {
     display: inline-block;
     -webkit-transform: scale(0.5, 1);

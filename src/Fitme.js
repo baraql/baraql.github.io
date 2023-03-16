@@ -3,7 +3,6 @@ import { Text } from "react-native";
 import './Projects.css';
 import { Link } from 'react-router-dom';
 import fitmeLogo from "./assets/fitmeLogo.png";
-import { HashRouter, Routes, Route } from "react-router-dom";
 import './Fitme.css';
 import Plx from 'react-plx';
 import fitmeSC1 from './assets/fitmeSC1.png'
@@ -11,6 +10,9 @@ import fitmeSC2 from './assets/fitmeSC2.png'
 import Typewriter from "typewriter-effect";
 import appStoreButton from "./assets/appstorebutton.svg"
 import usePageTracking from "./usePageTracking";
+
+const appIconSize = .05;
+
 
 function Fitme() {
   usePageTracking();
@@ -20,15 +22,10 @@ function Fitme() {
   return (
     <>
       <Logo style={{ zIndex: 1000 }} />
-      {/* <div style={{
-        height: '200vh',
-      }}> */}
       <div style={{ height: (1650 - (.005 * window.innerHeight + .05 * window.innerWidth)) + 'px', zIndex: '-1' }}></div>
       <div className={scroll ? "fixedElement" : "notFixedElement"} style={{ zIndex: '1' }} >
         <FirstDiv />
-        {/* Text */}
       </div>
-      {/* <div className={"notFixedElement"} style={{ marginTop: '200vh' }}> */}
       <div style={{ marginTop: '0vh' }}>
         <div style={{ opacity: scroll ? '0' : '1' }}>
           <SecondDiv />
@@ -37,12 +34,9 @@ function Fitme() {
       </div>
       <FourthDiv style={{ marginTop: '100vh' }} />
 
-      {/* <a className="statItem" style={{ marginRight: '30vw', marginTop: '5vw' }}>Back Home</a> */}
       <div className="item-red" style={{ backgroundColor: 'rgb(235, 60, 52)', textDecorationColor: 'white', marginTop: '20vh', width: '30vw', textAlign: 'center', marginLeft: '35vw' }}>
         <Link to='/projects' className="logo" style={{ color: "white" }}> Back to Projects </Link>
       </div>
-      {/* </div> */}
-      {/* </div> */}
     </>
   );
 }
@@ -55,8 +49,6 @@ function Logo() {
       top: '1.5vh',
       alignItems: 'center',
       paddingLeft: '2vw',
-      // border: '5px solid yellow',
-      // paddingTop: '3vh',
     }}>
       <Link to='/projects' className="logo"> baraq::projects:: </Link>
       <Plx parallaxData={plxAppLogo}>
@@ -64,12 +56,13 @@ function Logo() {
           alignItems: 'center',
         }}>
           <img src={fitmeLogo} style={{
-            height: appIconSize + 'vw',
-            borderRadius: appIconSize * .2166 + 'vw',
+            height: .05 * vw,
+            borderRadius: appIconSize * .2166 * vw,
             marginRight: '5px',
-          }} />
-          {/* <Link to='/' class="logo" style={{ marginBottom: 'auto', }}> fitme </Link> */}
-          <Text style={{ fontFamily: 'futura, serif', fontSize: '36px', }}>fitme</Text>
+          }}
+            alt="Fitme logo"
+          />
+          <Text style={{ fontFamily: 'futura, serif', fontSize: '36px', }}>Fitme</Text>
         </div>
       </Plx>
     </div>
@@ -78,8 +71,6 @@ function Logo() {
 
 function FirstDiv() {
   return (
-    // <Plx parallaxData={fullDiv1} style={{ zIndex: '-1', border: '10px solid rgb(255, 0, 0)' }
-    // }>
     <div className="flex-row-container" style={{
       height: '100vh',
       // paddingTop: '70vh',
@@ -294,16 +285,14 @@ const plx1Image1 = [
     end: 500,
     properties: [
       {
-        startValue: 500,
+        startValue: window.innerWidth * 0.4,
         endValue: 0,
         property: "translateX",
-        // unit: "%",
       },
       {
-        startValue: 500,
+        startValue: window.innerHeight * 0.6,
         endValue: 0,
         property: "translateY",
-        // unit: "%",
       },
     ],
   },
@@ -315,7 +304,7 @@ const plx1Text1 = [
     end: 500,
     properties: [
       {
-        startValue: 900,
+        startValue: window.innerWidth,
         endValue: 0,
         property: "translateX",
         // unit: "%",
@@ -330,7 +319,7 @@ const plx1Text2 = [
     end: 500,
     properties: [
       {
-        startValue: 900,
+        startValue: window.innerWidth,
         endValue: 900,
         property: "translateX",
         // unit: "%",
@@ -357,7 +346,7 @@ const plx1Text3 = [
     end: 1000,
     properties: [
       {
-        startValue: 900,
+        startValue: window.innerWidth,
         endValue: 900,
         property: "translateX",
         // unit: "%",
@@ -401,6 +390,9 @@ const div1Length = 1585;
 //   },
 // ];
 
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
 const plxAppLogo = [
   {
     start: 0,
@@ -412,20 +404,19 @@ const plxAppLogo = [
         property: "scale",
       },
       {
-        startValue: 300,
+        startValue: window.innerHeight * 0.5 - ((appIconSize * vw)),
         endValue: 0,
         property: "translateY",
       },
       {
-        startValue: 350,
+        startValue: window.innerWidth * 0.5 - ((appIconSize * vw * 2) + 181.14), // 181.14 = (5 (padding) * 2 (scale) + 171.14 (text size))
         endValue: 0,
         property: "translateX",
       },
     ],
   },
 ];
-
-const appIconSize = 5;
+//(((appIconSize * vw + 5) * 2) + 171.14) * .05)
 
 const plx2Image1 = [
   {
