@@ -26,11 +26,12 @@ function Start() {
                         <p>* I'm interested in mobile application</p>
                         <p>* development, fintech,</p>
                         <p>* and artificial intelligence.</p>
+                        {/* <br></br> */}
+                        <p>* <a className="link" href="mailto:baraq@nyu.edu" target="_blank" rel="noopener noreferrer">baraq@nyu.edu</a></p>
+                        <p>* <a className="link" href="https://linkedin.com/in/baraq" target="_blank" rel="noopener noreferrer">linkedin.com/in/baraq</a></p>
+                        <p>* <a className="link" href="https://github.com/baraql" target="_blank" rel="noopener noreferrer">github.com/baraql</a></p>
                         <p>*/</p>
-                        <br></br>
-                        <p>><a href="mailto:baraq@nyu.edu" target="_blank" rel="noopener noreferrer">baraq@nyu.edu</a></p>
-                        <p>><a href="https://linkedin.com/in/baraq" target="_blank" rel="noopener noreferrer">linkedin.com/in/baraq</a></p>
-                        <p>><a href="https://github.com/baraql" target="_blank" rel="noopener noreferrer">github.com/baraql</a></p>
+
                     </div>
                 </div>
             </Draggable>

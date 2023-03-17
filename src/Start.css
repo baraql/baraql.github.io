@@ -25,6 +25,22 @@ a.logo:hover {
   color: white
 }
 
+a.link:after {
+  display: inline-block;
+  -webkit-transform: scale(0.5, 1);
+  /* Safari and Chrome */
+  -moz-transform: scale(0.5, 1);
+  /* Firefox */
+  -ms-transform: scale(0.5, 1);
+  /* IE 9 */
+  -o-transform: scale(0.5, 1);
+  /* Opera */
+  transform: scale(0.5, 1);
+  /* W3C */
+  content: ">";
+  position: relative;
+  margin-left: 2px;
+}
 .face-image {
   width: 12.5vw;
   height: 12.5vw;
