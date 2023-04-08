@@ -64,7 +64,7 @@ function LightningTech() {
           overflowY: 'hidden',
           overflowX: 'hidden',
         }}>
-          <WebsitePreview url="https://www.matdesigngroup.com/" />
+          <WebsitePreview url="https://www.steelefiduciary.com/" />
           <WebsitePreview url="https://baraqlip.wixsite.com/jocelyn/home" />
         </div>
       </div >
