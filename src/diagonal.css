@@ -1,0 +1,7 @@
+.diagonal-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.diagonal-top {
+    clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+}
