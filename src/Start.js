@@ -95,11 +95,13 @@ function Start() {
           y: -(window.innerWidth * 0.44) + window.innerHeight * 0.125,
         }}
       >
-        <img
-          src={face}
-          className="no-drag-image face-image"
-          alt="Professional headshot of Baraq Lipshitz"
-        />
+        <div>
+          <img
+            src={face}
+            className="no-drag-image face-image"
+            alt="Professional headshot of Baraq Lipshitz"
+          />
+        </div>
       </Draggable>
     </div>
   );
