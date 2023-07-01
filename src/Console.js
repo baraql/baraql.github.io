@@ -38,15 +38,12 @@ function AutofocusingTextInput(props) {
         position: "absolute",
         marginTop: "0.175vw",
         marginLeft: "0.97vw",
-        // top: '1%',
         fontSize: "1.6vw",
         zIndex: "1",
       }}
       caretHidden="true"
-      // autoFocus
       variant="standard"
       placeholder=""
-      // onKeyDown={handleKeyDown}
       onChangeText={(text) => {
         props.setInputText(text);
       }}
@@ -73,7 +70,6 @@ function AutofocusingTextInput(props) {
 const paths = ["projects", "resume"];
 
 function Console() {
-  // TODO make it look like a mac terminal window when you start typing, make it scrollable
   var [showInput, setShowInput] = useState(false);
   var [inputText, setInputText] = useState("");
   return (
@@ -108,8 +104,6 @@ function Console() {
             height: "0.85vw",
             width: "0.85vw",
             backgroundColor: "#FF605C",
-            // backgroundColor: '#e85ae8',
-            // backgroundColor: '#d36fd3',
             borderRadius: "50%",
             display: "inline-block",
           }}
@@ -134,8 +128,6 @@ function Console() {
             height: "0.85vw",
             width: "0.85vw",
             backgroundColor: "#00CA4E",
-            // backgroundColor: '#72d6d1',
-            // backgroundColor: '#81c7c3',
             borderRadius: "50%",
             display: "inline-block",
           }}
@@ -187,7 +179,7 @@ function Console() {
               paddingTop: "0.8vw",
             }}
           >
-            {inputText == "" ? (
+            {inputText === "" ? (
               <div
                 className="overlayedPlaceholder"
                 style={{
@@ -196,10 +188,8 @@ function Console() {
                 }}
               >
                 <div className="flex-row-container">
-                  {/* <Text>    </Text> */} {/* // TODO make unselectable */}
-                  <Typewriter /* className="noselect"  onmousedown="return false" onselectstart="return false"*/
+                  <Typewriter
                     options={{
-                      /* strings: ['resume', 'projects', 'about', 'contact', 'help', 'game'],*/
                       strings: paths,
                       autoStart: true,
                       loop: true,

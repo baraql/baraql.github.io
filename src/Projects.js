@@ -42,6 +42,7 @@ function AppItem(props) {
       >
         <img
           src={props.image}
+          alt={props.text}
           style={
             down
               ? {
@@ -78,9 +79,6 @@ function AppItem(props) {
             whiteSpace: "normal",
             overflow: "wrap",
             overflowWrap: "normal",
-            // position: 'absolute',
-            // left: 'auto',
-            // right: '0',
           }}
         >
           {props.text}
@@ -107,7 +105,6 @@ function ProjectMenu() {
           display: "flex",
           flexDirection: "row",
           flexWrap: "nowrap",
-          // marginTop: "3vh",
           zIndex: "2",
         }}
       >
@@ -125,8 +122,6 @@ function ProjectMenu() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          /* border: 10px solid blue; */
-          /* text-align: center; */
           minHeight: "96vh",
           minWidth: "100vw",
         }}
@@ -161,11 +156,6 @@ function ProjectMenu() {
               text="NYC At A Glance"
               link="https://github.com/baraql/NYCAtAGlance"
             />
-            {/* <CarouselSpace width="2vw" /> */}
-            {/* <CarouselItem color="#00ff00" /> */}
-            {/* <CarouselSpace width="2vw" /> */}
-            {/* <CarouselItem color="#0000ff" /> */}
-            {/* <CarouselSpace width="2vw" /> */}
           </div>
         </div>
       </div>

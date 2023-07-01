@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Text } from "react-native";
+import React from "react";
 import "./Projects.css";
 import { Link } from "react-router-dom";
-import fitmeLogo from "./assets/fitmeLogo.png";
-import { HashRouter, Routes, Route } from "react-router-dom";
 import "./LightningTechnology.css";
 import "./Fitme.css";
-import Plx from "react-plx";
-import fitmeSC1 from "./assets/fitmeSC1.png";
-import Typewriter from "typewriter-effect";
-import appStoreButton from "./assets/appstorebutton.svg";
 import usePageTracking from "./usePageTracking";
 
 function WebsitePreview(props) {
@@ -18,8 +11,6 @@ function WebsitePreview(props) {
   };
 
   return (
-    // <div>
-    // <div className="flex-container">
     <div
       style={{
         width: "100vw",
@@ -28,7 +19,6 @@ function WebsitePreview(props) {
         marginLeft: "5vw",
       }}
     >
-      {/* <a href={props.url} target="_blank" rel="noopener noreferrer" style={{ width: "100%", height: "100%" }}> */}
       <iframe
         style={{
           width: "100%",
@@ -37,12 +27,10 @@ function WebsitePreview(props) {
         }}
         src={props.url}
         className="frame"
+        title={props.url}
         onClick={handleClick}
       ></iframe>
-      {/*</a>*/}
     </div>
-    // <a href={props.url} target="_blank" rel="noopener noreferrer">Hi</a>
-    // </div>
   );
 }
 
