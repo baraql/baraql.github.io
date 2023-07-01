@@ -10,7 +10,7 @@ import "./rainbow.css";
 function Start() {
   return (
     <div className="rainbowWrapper diagonal-bottom">
-      <div class="logoWrapper">
+      <div className="logoWrapper">
         <Link to="/" style={{ color: "white" }} className="logo">
           {" "}
           baraq{" "}

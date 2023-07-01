@@ -112,7 +112,7 @@ function ProjectMenu() {
         }}
       >
         <div className="fixed-div logoWrapper" style={{ zIndex: "1" }}>
-          <Link to="/" class="logo">
+          <Link to="/" className="logo">
             {" "}
             baraq::projects{" "}
           </Link>

@@ -1,6 +1,13 @@
 import React, { useState, useRef, useLayoutEffect } from "react";
-import { Text, StyleSheet, View, SafeAreaView, TextInput } from "react-native";
+import { TextInput } from "react-native";
 import Typewriter from "typewriter-effect";
+
+const downloadResume = () => {
+  window.open(
+    "https://github.com/baraql/baraql.github.io/raw/main/src/assets/baraq_lipshitz_resume.pdf",
+    "_blank"
+  );
+};
 
 function AutofocusingTextInput(props) {
   const inputRef = useRef(null);
@@ -46,19 +53,17 @@ function AutofocusingTextInput(props) {
       onSubmitEditing={(e) => {
         e.preventDefault();
         const formattedInputText = props.inputText.toLowerCase().trim();
-        for (const path of paths) {
-          if (formattedInputText.includes(path)) {
-            // if (paths.some((path) => formattedInputText.includes(path))) {
-            if (props.inputText === "resume")
-              window.open(
-                "https://github.com/baraql/baraql.github.io/raw/master/src/assets/baraq_lipshitz_resume.pdf",
-                "_blank"
-              );
-            else window.location.href = "/#/" + path;
+        if (props.inputText.includes("resume")) {
+          downloadResume();
+        } else {
+          for (const path of paths) {
+            if (formattedInputText.includes(path)) {
+              window.location.href = "/#/" + path;
+            }
           }
+          props.setInputText("");
+          document.getElementById("consoleTextInput").focus();
         }
-        props.setInputText("");
-        document.getElementById("consoleTextInput").focus();
       }}
       value={props.inputText}
     />

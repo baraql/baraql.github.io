@@ -52,7 +52,7 @@ function LightningTech() {
   return (
     <>
       <div className="fixed-div logoWrapper" style={{ zIndex: "1" }}>
-        <Link to="/projects" class="logo">
+        <Link to="/projects" className="logo">
           {" "}
           baraq::projects::websites{" "}
         </Link>
@@ -63,7 +63,7 @@ function LightningTech() {
         Some of the websites I've made for businesses under my general-purpose
         IT startup, Lightning Tech.
         <div
-          class="row-container"
+          className="row-container"
           style={{
             marginTop: "10vh",
             height: "50vh",
@@ -75,7 +75,7 @@ function LightningTech() {
           <WebsitePreview url="https://www.jobs.kreitzmanconsulting.com/" />
         </div>
         <div
-          class="row-container"
+          className="row-container"
           style={{
             height: "50vh",
             overflowY: "hidden",
