@@ -58,9 +58,9 @@ function AutofocusingTextInput(props) {
               window.location.href = "/#/" + path;
             }
           }
-          props.setInputText("");
-          document.getElementById("consoleTextInput").focus();
         }
+        props.setInputText("");
+        document.getElementById("consoleTextInput").focus();
       }}
       value={props.inputText}
     />
