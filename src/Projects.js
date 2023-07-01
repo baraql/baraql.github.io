@@ -107,11 +107,11 @@ function ProjectMenu() {
           display: "flex",
           flexDirection: "row",
           flexWrap: "nowrap",
-          marginTop: "3vh",
+          // marginTop: "3vh",
           zIndex: "2",
         }}
       >
-        <div class="fixed-div" style={{ zIndex: "1", left: "2vw" }}>
+        <div className="fixed-div logoWrapper" style={{ zIndex: "1" }}>
           <Link to="/" class="logo">
             {" "}
             baraq::projects{" "}
@@ -138,6 +138,7 @@ function ProjectMenu() {
             width: "30vw",
             height: "34vw",
             borderRadius: "4vw",
+            marginTop: "3vh",
           }}
         >
           <div

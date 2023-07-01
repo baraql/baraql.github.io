@@ -15,14 +15,12 @@ a.logo {
   font-family: "futura", serif;
   text-decoration: none;
   font-size: 36px;
-  color: white
 }
 
 a.logo:hover {
   font-family: "futura", serif;
   text-decoration: underline;
   font-size: 36px;
-  color: white
 }
 
 .face-image {

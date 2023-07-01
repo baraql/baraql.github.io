@@ -15,14 +15,14 @@ a.logo {
   font-family: "futura", serif;
   text-decoration: none;
   font-size: 36px;
-  color: white
+  /* color: white */
 }
 
 a.logo:hover {
   font-family: "futura", serif;
   text-decoration: underline;
   font-size: 36px;
-  color: white
+  /* color: white */
 }
 
 a.link:after {
@@ -207,12 +207,6 @@ pre.caret-block>span {
 .rainbowWrapper {
   width: 100vw;
   height: 118vh;
-}
-
-.logoWrapper {
-  position: absolute;
-  padding-left: 2vw;
-  padding-top: 3vh;
 }
 
 .textedit-wrapper {
