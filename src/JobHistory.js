@@ -1,40 +1,94 @@
 import React from "react";
 import "./JobHistory.css";
 import "./diagonal.css";
+import PayoneerLogo from "./assets/job-history/payoneer.png";
+import ForbesLogo from "./assets/job-history/forbes.png";
+
 export const JobHistory = () => {
   const jobHistory = [
     {
-      company: "Company A",
-      position: "Software Engineer",
-      startDate: "2019-01-01",
-      endDate: "2021-12-31",
+      company: "Forbes Media",
+      position: "Technology Intern",
+      startDate: "June 2023",
+      endDate: "August 2023",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      logo: ForbesLogo,
+      link: "https://forbes.com",
     },
     {
-      company: "Company B",
-      position: "Senior Developer",
-      startDate: "2022-01-01",
-      endDate: "2023-06-30",
+      company: "Payoneer",
+      position: "Software Engineer Intern",
+      startDate: "June 2022",
+      endDate: "September 2022",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      logo: PayoneerLogo,
+      link: "https://payoneer.com",
     },
-    // Add more job history objects as needed
   ];
 
   return (
     <div
       className="diagonal-top"
-      style={{ backgroundColor: "#ededed", width: "100vw", height: "100vh" }}
+      style={{ backgroundColor: "#ededed", width: "100vw", minHeight: "100vh" }}
     >
-      <div style={{ padding: "40px", paddingTop: "20vh" }}>
-        <h1 className="h1">Job History</h1>
+      <div
+        className="container-vertical"
+        style={{
+          paddingTop: "15vh",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <h1 className="h1" style={{ width: "80%", paddingBottom: "40px" }}>
+          Work History
+        </h1>
         {jobHistory.map((job, index) => (
-          <div key={index}>
-            {/* <h2>{job.company}</h2>
-            <h3>{job.position}</h3>
-            <p>
-              {job.startDate} - {job.endDate}
-            </p>
-            <p>{job.description}</p> */}
+          <div
+            key={index}
+            className="job-container container-horizontal"
+            style={{ paddingBottom: "100px" }}
+          >
+            <div className="company-logo" style={{ paddingRight: "30px" }}>
+              <a href={job.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={job.logo}
+                  style={{
+                    width: "120px",
+                    height: "120px",
+                    borderRadius: "10px",
+                    border: "1px solid lightGray",
+                  }}
+                  alt={job.company + " logo"}
+                />
+              </a>
+            </div>
+            <div className="job-details">
+              <a
+                href={job.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <h2
+                  style={{
+                    margin: "0",
+                    marginBottom: "10px",
+                  }}
+                >
+                  {job.company}
+                </h2>
+              </a>
+              <h3 style={{ margin: "0", marginBottom: "5px" }}>
+                {job.position}
+              </h3>
+              <p
+                className="job-dates"
+                style={{ margin: "0", marginBottom: "5px" }}
+              >
+                {job.startDate} - {job.endDate}
+              </p>
+              <p style={{ margin: "0" }}>{job.description}</p>
+            </div>
           </div>
         ))}
       </div>
