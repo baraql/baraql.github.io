@@ -36,9 +36,9 @@ function Start() {
                         <p>* development, fintech,</p>
                         <p>* and artificial intelligence.</p> */}
             {/* <br></br> */}
-            <p>* This summer, I'm interning at Forbes Media </p>
-            <p>* and self-studying Fast.AI's</p>
-            <p>* Practical Deep Learning for Coders</p>
+            <p>* Software engineer at the</p>
+            <p>* NYU High Speed Research Network</p>
+            <p>* and NYU CS student graduating May 2024</p>
             <p>
               *{" "}
               <a

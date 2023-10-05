@@ -8,6 +8,15 @@ import NYULogo from "./assets/job-history/nyu.png";
 export const JobHistory = () => {
   const jobHistory = [
     {
+      company: "High Speed Research Network",
+      position: "Software Engineer",
+      startDate: "September 2023",
+      endDate: "Present",
+      description: "C++, Network engineering",
+      logo: NYULogo,
+      link: "https://www.nyu.edu/life/information-technology/research-computing-services/research-data-and-tools/high-speed-research-network-hsrn.html",
+    },
+    {
       company: "Forbes Media",
       position: "Technology Intern",
       startDate: "June 2023",

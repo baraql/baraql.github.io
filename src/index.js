@@ -30,10 +30,7 @@ if (vw > vh) {
 } else {
   ReactDOM.render(
     <React.StrictMode>
-      <p>
-        Sorry, but I'm not optimized for mobile yet! Please use this website in
-        landscape mode.
-      </p>
+      <p>Please use this website in landscape mode.</p>
     </React.StrictMode>,
     document.getElementById("root")
   );
