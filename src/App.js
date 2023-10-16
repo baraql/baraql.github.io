@@ -3,6 +3,7 @@
 import "./App.css";
 import firebaseConfig from "./firebase.js";
 import Home from "./Home";
+import Links from "./Links";
 // initializeAnalytics();
 
 const app = firebaseConfig.app;
@@ -18,7 +19,8 @@ const analytics = firebaseConfig.analytics;
 
 //Floating animations hovering up and down
 function App() {
-  return <Home style={{ overflowX: "hidden" }} />;
+  // return <Home style={{ overflowX: "hidden" }} />;
+  return Links;
 }
 
 export default App;

@@ -1,4 +1,5 @@
 import Start from "./Start";
+import Links from "./Links";
 import FitmeBanner from "./FitmeBanner";
 import "./Home.css";
 import usePageTracking from "./usePageTracking";
@@ -16,9 +17,12 @@ function Home() {
         position: "relative",
       }}
     >
-      <div style={{ height: "200vh", width: "100vw" }}>
+      <div style={{ height: "230vh", width: "100vw" }}>
         <div style={{ width: "100vw", height: "100vh" }}>
           <Start />
+        </div>
+        <div>
+          <Links />
         </div>
         <div
           style={{

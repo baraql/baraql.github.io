@@ -5,3 +5,7 @@
 .diagonal-top {
     clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
 }
+
+.diagonal-banner {
+    clip-path: polygon(0 45%, 100% 0, 100% 55%, 0% 100%);
+}
