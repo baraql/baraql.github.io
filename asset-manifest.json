@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.69907711.css",
-    "main.js": "./static/js/main.68a561f4.js",
+    "main.css": "./static/css/main.d5fdf451.css",
+    "main.js": "./static/js/main.0948a76a.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/profileOverlayed.mp4": "./static/media/profileOverlayed.4ba6035e9a6d3fc17e4d.mp4",
     "static/media/fitmeSC1.png": "./static/media/fitmeSC1.82344ef1bdd1eba584b6.png",
@@ -15,12 +15,12 @@
     "static/media/forbes.png": "./static/media/forbes.4ceda81902cfd113af0a.png",
     "static/media/appstorebutton.svg": "./static/media/appstorebutton.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "./index.html",
-    "main.69907711.css.map": "./static/css/main.69907711.css.map",
-    "main.68a561f4.js.map": "./static/js/main.68a561f4.js.map",
+    "main.d5fdf451.css.map": "./static/css/main.d5fdf451.css.map",
+    "main.0948a76a.js.map": "./static/js/main.0948a76a.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69907711.css",
-    "static/js/main.68a561f4.js"
+    "static/css/main.d5fdf451.css",
+    "static/js/main.0948a76a.js"
   ]
 }
