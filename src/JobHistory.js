@@ -9,7 +9,7 @@ export const JobHistory = () => {
   const jobHistory = [
     {
       company: "High Speed Research Network",
-      position: "Software Engineer",
+      position: "Team Lead, Software Engineer",
       startDate: "September 2023",
       endDate: "Present",
       description: "C++, Network engineering",
