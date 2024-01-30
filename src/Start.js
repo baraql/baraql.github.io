@@ -32,11 +32,7 @@ function Start() {
 
           <div style={{ marginLeft: "0.3vw" }}>
             <p>/*</p>
-            {/* <p>* I'm interested in mobile application</p>
-                        <p>* development, fintech,</p>
-                        <p>* and artificial intelligence.</p> */}
-            {/* <br></br> */}
-            <p>* Software engineer at the</p>
+            <p>* Team Lead at the</p>
             <p>* NYU High Speed Research Network</p>
             <p>* and NYU CS student graduating May 2024</p>
             <p>
