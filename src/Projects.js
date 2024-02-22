@@ -146,11 +146,7 @@ function ProjectMenu() {
           >
             <CarouselSpace width="1.5vw" />
             <AppItem image={fitmeLogo} text="Fitme" projectName="fitme" />
-            <AppItem
-              image={lightningLogo}
-              text="Lightning Tech"
-              projectName="lightningtech"
-            />
+
             <AppItem
               image={fTrainIcon}
               text="NYC At A Glance"

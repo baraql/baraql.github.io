@@ -33,8 +33,8 @@ function Start() {
           <div style={{ marginLeft: "0.3vw" }}>
             <p>/*</p>
             <p>* Team Lead at the</p>
-            <p>* NYU High Speed Research Network</p>
-            <p>* and NYU CS student graduating May 2024</p>
+            <p>* NYU High Speed Research Network and </p>
+            <p>* NYU CS student graduating May 2024</p>
             <p>
               *{" "}
               <a
