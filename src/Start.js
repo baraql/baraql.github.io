@@ -32,9 +32,9 @@ function Start() {
 
           <div style={{ marginLeft: "0.3vw" }}>
             <p>/*</p>
-            <p>* Team Lead at the</p>
-            <p>* NYU High Speed Research Network and </p>
-            <p>* NYU CS student graduating May 2024</p>
+            <p>* Incoming ETH Zürich MSc.</p>
+            <p>* student in CS and ML</p>
+            <p>* NYU CS alum </p>
             <p>
               *{" "}
               <a

@@ -48,7 +48,7 @@ export const JobHistory = () => {
   return (
     <div
       className="diagonal-top"
-      style={{ backgroundColor: "#ededed", width: "100vw", minHeight: "100vh" }}
+      style={{ backgroundColor: "#f1f1f1", width: "100vw", minHeight: "100vh" }}
     >
       <div
         className="container-vertical"
@@ -67,10 +67,11 @@ export const JobHistory = () => {
               key={index}
               className="container-horizontal"
               style={{
-                paddingBottom: "100px",
-                alignItems: "start",
+                paddingBottom: "90px",
+                alignItems: "center",
                 // width: "42.5%",
                 justifyContent: "start",
+                height: "120px"
               }}
             >
               <div className="company-logo" style={{ paddingRight: "30px" }}>
@@ -79,7 +80,7 @@ export const JobHistory = () => {
                     src={job.logo}
                     style={{
                       width: "120px",
-                      height: "120px",
+                      height: "100%",
                       borderRadius: "10px",
                       border: "1px solid lightGray",
                     }}

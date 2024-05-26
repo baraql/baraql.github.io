@@ -1,12 +1,18 @@
 .rainbowWrapper {
     position: absolute;
-    background: linear-gradient(118deg, #03001e, #7303c0, #ec38bc, #fdeff9);
-    background-size: 200% 200%;
+    /* background: linear-gradient(118deg, #243949, #395979, #5779a3, #799ac0); */
+    /* background: linear-gradient(118deg, #00ff87, #60efff); */
+    background: linear-gradient(118deg, #F45B69, #4062BB, #59C3C3, #EBEBEB);
+    /* background: linear-gradient(118deg, #094074, #3c6997, #FE9000, #ebebeb, #f62dae); */
+    /* background: linear-gradient(118deg, #e0b49b, #f2c9a7, #ffdcc4, #fdeff9); */
 
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;
+    /* background: linear-gradient(118deg, #03001e, #393939, #7C7C7C, #fdeff9); */
+    background-size: 300% 300%;
+
+    -webkit-animation: rainbow 12s ease infinite;
+    -z-animation: rainbow 12s ease infinite;
+    -o-animation: rainbow 12s ease infinite;
+    animation: rainbow 12s ease infinite;
 }
 
 @-webkit-keyframes rainbow {

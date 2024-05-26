@@ -36,8 +36,9 @@ function AutofocusingTextInput(props) {
         outline: "none",
         padding: 0,
         position: "absolute",
-        marginTop: "0.175vw",
-        marginLeft: "0.97vw",
+        marginTop: "-0.6vw",
+        // paddingBottom: "3vw",
+        marginLeft: "9.2vw",
         fontSize: "1.6vw",
         zIndex: "1",
       }}
@@ -146,24 +147,24 @@ function Console() {
           }}
           onInit={(typewriter) => {
             typewriter
-              .changeDelay(1)
-              .pasteString(">")
-              .changeDelay(50)
-              .typeString("Hello, world!")
-              .pauseFor(300)
+              // .changeDelay(1)
+              // .pasteString(">")
+              // .changeDelay(50)
+              // .typeString("Hello, world!")
+              // .pauseFor(300)
 
-              .changeDelay(1)
-              .pasteString("<p>")
-              .pasteString(">")
-              .changeDelay(50)
-              .typeString("I'm Baraq Lipshitz,")
+              // .changeDelay(1)
+              // .pasteString("<p>")
+              // .pasteString(">")
+              // .changeDelay(50)
+              // .typeString("I'm Baraq Lipshitz,")
 
-              .changeDelay(1)
-              .typeString("<p>")
-              .pasteString(">")
-              .changeDelay(50)
-              .typeString("a CS student at NYU.")
-              .pauseFor(500)
+              // .changeDelay(1)
+              // .typeString("<p>")
+              // .pasteString(">")
+              // .changeDelay(50)
+              // .typeString("a CS student at NYU.")
+              // .pauseFor(500)
               .callFunction(function (state) {
                 setShowInput(true);
                 state.elements.cursor.style.display = "none";
@@ -176,15 +177,15 @@ function Console() {
         {showInput ? (
           <div
             style={{
-              paddingTop: "0.8vw",
+              // paddingTop: "0.8vw",
             }}
           >
             {inputText === "" ? (
               <div
                 className="overlayedPlaceholder"
                 style={{
-                  paddingTop: "0.70vw",
-                  paddingLeft: "0.97vw",
+                  // paddingTop: "0.70vw",
+                  paddingLeft: "9.2vw",
                 }}
               >
                 <div className="flex-row-container">
@@ -202,10 +203,10 @@ function Console() {
             <div className="flex-row-container">
               <div
                 style={{
-                  paddingTop: "0.75vw",
+                  // paddingTop: "0.75vw",
                 }}
               >
-                >
+                baraq ~ %
               </div>
               <AutofocusingTextInput
                 inputText={inputText}

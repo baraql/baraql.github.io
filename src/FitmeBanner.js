@@ -3,9 +3,12 @@ import "./FitmeBanner.css";
 import fitmeLogo from "./assets/fitmeLogo.png";
 import demoVideo from "./assets/profileOverlayed.mp4";
 import demoVideoPlaceholder from "./assets/profileOverlayedStillCompressed.jpg";
-const appIconSize = 8;
+import "./diagonal.css"
+const appIconSize = 7;
 
 function Home() {
+  const [containerHeight, setContainerHeight] = React.useState("60vh"); // You can change this to 40vh, 30vh, etc.
+
   function scrollToTop() {
     window.scrollTo(0, 0);
   }
@@ -13,12 +16,25 @@ function Home() {
   return (
     <div
       className="container-horizontal"
-      style={{ height: "100vh", marginTop: "5vh" }}
+      style={{ height: containerHeight, marginTop: "7.5vh" }}
     >
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100%",
+        }}
+      >
         <div
           className="container-horizontal"
-          style={{ height: appIconSize + "vw", paddingBottom: "20px" }}
+          style={{
+            height: appIconSize + "vw",
+            paddingBottom: "20px",
+            display: "flex",
+            alignItems: "center",
+          }}
         >
           <img
             src={fitmeLogo}
@@ -29,7 +45,7 @@ function Home() {
             }}
             alt="Fitme logo"
           />
-          <p className="text" style={{ fontSize: "72px" }}>
+          <p className="text" style={{ fontSize: "64px" }}>
             Fitme
           </p>
         </div>
@@ -42,14 +58,13 @@ function Home() {
           See the project
         </a>
       </div>
-      <div style={{ maxHeight: "70vh", marginLeft: "6vw" }}>
-        {/* <Suspense fallback={<img src={demoVideoPlaceholder} alt="Demo video placeholder" />}> */}
+      <div style={{ maxHeight: "50vh", marginLeft: "3vw" }}>
         <video
           autoPlay
           loop
           muted
           playsInline
-          style={{ maxHeight: "70vh", marginLeft: "6vw" }}
+          style={{ maxHeight: "50vh", marginLeft: "3vw" }}
           poster={demoVideoPlaceholder}
         >
           <source src={demoVideo} type="video/mp4" />
