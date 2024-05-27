@@ -53,7 +53,13 @@ function AutofocusingTextInput(props) {
         const formattedInputText = props.inputText.toLowerCase().trim();
         if (props.inputText.includes("resume")) {
           downloadResume();
-        } else {
+        } else if (props.inputText.includes("projects")) {
+          window.scrollBy(0, window.innerHeight * 1.2 - window.scrollY);
+        }
+         else if (props.inputText.includes("experience")) {
+          window.scrollBy(0, window.innerHeight * 2.4 - window.scrollY);
+        }
+        else {
           for (const path of paths) {
             if (formattedInputText.includes(path)) {
               window.location.href = "/#/" + path;
@@ -68,7 +74,7 @@ function AutofocusingTextInput(props) {
   );
 }
 
-const paths = ["projects", "resume"];
+const paths = ["resume", "projects", "experience"];
 
 function Console() {
   var [showInput, setShowInput] = useState(false);
