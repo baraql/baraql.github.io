@@ -36,10 +36,10 @@ function AutofocusingTextInput(props) {
         outline: "none",
         padding: 0,
         position: "absolute",
-        marginTop: "-0.6vw",
+        marginTop: "-10px",
         // paddingBottom: "3vw",
-        marginLeft: "9.2vw",
-        fontSize: "1.6vw",
+        marginLeft: "157px",
+        fontSize: "27px",
         zIndex: "1",
       }}
       caretHidden="true"
@@ -56,7 +56,7 @@ function AutofocusingTextInput(props) {
         } else if (props.inputText.includes("projects")) {
           window.scrollBy(0, window.innerHeight * 1.2 - window.scrollY);
         }
-         else if (props.inputText.includes("experience")) {
+        else if (props.inputText.includes("experience")) {
           window.scrollBy(0, window.innerHeight * 2.4 - window.scrollY);
         }
         else {
@@ -67,7 +67,11 @@ function AutofocusingTextInput(props) {
           }
         }
         props.setInputText("");
-        document.getElementById("consoleTextInput").focus();
+        try {
+          document.getElementById("consoleTextInput").focus();
+        } catch (e) {
+          console.error(e);
+        }
       }}
       value={props.inputText}
     />
@@ -84,11 +88,11 @@ function Console() {
       className="codebox-input code-font"
       style={{
         backgroundColor: "#1e1e1e",
-        borderRadius: "0.8vw",
-        paddingBottom: "3vw",
-        width: "35vw",
-        height: "20vw",
-        boxShadow: "1vw 1vw 2.5vw #1a1a1a",
+        borderRadius: "14px",
+        paddingBottom: "51px",
+        width: "599px",
+        height: "342px",
+        boxShadow: "17px 17px 43px #1a1a1a",
         zIndex: "1",
         lineHeight: "0.5",
       }}
@@ -97,9 +101,9 @@ function Console() {
         className="flex-row-container"
         style={{
           backgroundColor: "#403434",
-          minHeight: "1.8vw",
-          borderTopLeftRadius: "0.8vw",
-          borderTopRightRadius: "0.8vw",
+          minHeight: "31px",
+          borderTopLeftRadius: "14px",
+          borderTopRightRadius: "14px",
           margin: "auto",
         }}
       >
@@ -107,9 +111,9 @@ function Console() {
           style={{
             marginTop: "auto",
             marginBottom: "auto",
-            marginLeft: "0.55vw",
-            height: "0.85vw",
-            width: "0.85vw",
+            marginLeft: "9px",
+            height: "15px",
+            width: "15px",
             backgroundColor: "#FF605C",
             borderRadius: "50%",
             display: "inline-block",
@@ -119,9 +123,9 @@ function Console() {
           style={{
             marginTop: "auto",
             marginBottom: "auto",
-            marginLeft: "0.55vw",
-            height: "0.85vw",
-            width: "0.85vw",
+            marginLeft: "9px",
+            height: "15px",
+            width: "15px",
             backgroundColor: "#FFBD44",
             borderRadius: "50%",
             display: "inline-block",
@@ -131,9 +135,9 @@ function Console() {
           style={{
             marginTop: "auto",
             marginBottom: "auto",
-            marginLeft: "0.55vw",
-            height: "0.85vw",
-            width: "0.85vw",
+            marginLeft: "9px",
+            height: "15px",
+            width: "15px",
             backgroundColor: "#00CA4E",
             borderRadius: "50%",
             display: "inline-block",
@@ -142,8 +146,8 @@ function Console() {
       </div>
       <div
         style={{
-          paddingTop: "1.5vw",
-          paddingLeft: "0.8vw",
+          paddingTop: "26px",
+          paddingLeft: "14px",
         }}
       >
         <Typewriter
@@ -153,24 +157,6 @@ function Console() {
           }}
           onInit={(typewriter) => {
             typewriter
-              // .changeDelay(1)
-              // .pasteString(">")
-              // .changeDelay(50)
-              // .typeString("Hello, world!")
-              // .pauseFor(300)
-
-              // .changeDelay(1)
-              // .pasteString("<p>")
-              // .pasteString(">")
-              // .changeDelay(50)
-              // .typeString("I'm Baraq Lipshitz,")
-
-              // .changeDelay(1)
-              // .typeString("<p>")
-              // .pasteString(">")
-              // .changeDelay(50)
-              // .typeString("a CS student at NYU.")
-              // .pauseFor(500)
               .callFunction(function (state) {
                 setShowInput(true);
                 state.elements.cursor.style.display = "none";
@@ -191,7 +177,7 @@ function Console() {
                 className="overlayedPlaceholder"
                 style={{
                   // paddingTop: "0.70vw",
-                  paddingLeft: "9.2vw",
+                  paddingLeft: "157px",
                 }}
               >
                 <div className="flex-row-container">

@@ -1,5 +1,5 @@
 import React from "react";
-import "./RobotVisionBanner.css";
+import "./Banner.css";
 import fitmeLogo from "./assets/fitmeLogo.png";
 import demoVideo from "./assets/profileOverlayed.mp4";
 import demoVideoPlaceholder from "./assets/profileOverlayedStillCompressed.jpg";
@@ -8,7 +8,7 @@ import Vimeo from '@u-wave/react-vimeo';
 // const appIconSize = 7;
 
 function Home() {
-  const [containerHeight, setContainerHeight] = React.useState("60vh"); // You can change this to 40vh, 30vh, etc.
+  const [containerHeight, setContainerHeight] = React.useState("50vh"); // You can change this to 40vh, 30vh, etc.
 
   function scrollToTop() {
     window.scrollTo(0, 0);
@@ -17,7 +17,7 @@ function Home() {
   return (
     <div
       className="container-horizontal"
-      style={{ height: containerHeight, marginTop: "7.5vh" }}
+      style={{ height: containerHeight, marginTop: "0vh" }}
     >
       <div
         style={{
@@ -37,14 +37,14 @@ function Home() {
             alignItems: "center",
           }}
         >
-          <p className="text" style={{ fontSize: "64px", marginBlock: 0 }}>
+          <p className="text" style={{ fontSize: "48px", marginBlock: 0 }}>
             AI Robot
           </p>
         <a
           className="button"
           href="https://drive.google.com/file/d/18ch9GdXvAAAcynauIHtNebtqqi3pBm-S/view?usp=sharing"
           target="_blank"
-          style={{ fontSize: "25px" }}
+          style={{ fontSize: "22px" }}
           onClick={scrollToTop}
         >
           Presentation
@@ -53,7 +53,7 @@ function Home() {
           className="button"
           href="https://github.com/baraql/ai-maze-solver"
           target="_blank"
-          style={{ fontSize: "25px" }}
+          style={{ fontSize: "22px" }}
           onClick={scrollToTop}
         >
           Code

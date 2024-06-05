@@ -1,12 +1,15 @@
 import Start from "./Start";
 import FitmeBanner from "./FitmeBanner";
-import "./Home.css";
-import usePageTracking from "./usePageTracking";
 import { JobHistory } from "./JobHistory";
-import "./diagonal.css"
 import RobotVisionBanner from "./RobotVisionBanner"
+import SpotifyML from "./Projects"
+import usePageTracking from "./usePageTracking";
+import "./Home.css";
+import "./diagonal.css"
 import "./fadeInUp.css"
-let BANNER_SIZE = 60;
+import Projects from "./Projects";
+
+let BANNER_SIZE = 50;
 
 function Home() {
   usePageTracking();
@@ -20,11 +23,13 @@ function Home() {
         position: "relative",
       }}
     >
-      <div style={{ height: BANNER_SIZE * 1 + 100 + "vh", width: "100vw" }}>
-        <div style={{ width: "100vw", height: "100vh" }}>
-          <Start />
-        </div>
-        <div 
+      {/* <div style={{ height: BANNER_SIZE * 2 + 100 + "vh", width: "100vw" }}> */}
+      <div style={{ width: "100vw", height: "118vh" }}>
+        <Start />
+      </div>
+      <div>
+        <Projects />
+        {/* <div
           style={{
             position: "static",
             height: BANNER_SIZE + "vh",
@@ -32,10 +37,20 @@ function Home() {
             borderBottom: "2px solid #ddd"
           }}
         >
-          <RobotVisionBanner  />
+          <SpotifyML />
         </div>
-      </div>
-      <div
+        <div
+          style={{
+            position: "static",
+            height: BANNER_SIZE + "vh",
+            width: "100vw",
+            borderBottom: "2px solid #ddd"
+          }}
+        >
+          <RobotVisionBanner />
+        </div>
+
+        <div
           style={{
             position: "static",
             height: BANNER_SIZE + "vh",
@@ -43,9 +58,10 @@ function Home() {
           }}
         >
           <FitmeBanner />
-        </div>
+        </div> */}
+      </div>
       <JobHistory />
-    </div>
+    </div >
   );
 }
 

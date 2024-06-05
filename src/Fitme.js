@@ -55,7 +55,7 @@ function Fitme() {
           marginLeft: "35vw",
         }}
       >
-        <Link to="/projects" className="logo" style={{ color: "white" }}>
+        <Link to="/" className="logo" style={{ color: "white" }}>
           {" "}
           Back to Projects{" "}
         </Link>
@@ -76,7 +76,7 @@ function Logo() {
         paddingLeft: "2vw",
       }}
     >
-      <Link to="/projects" className="logo">
+      <Link to="/" className="logo">
         {" "}
         baraq::projects::{" "}
       </Link>

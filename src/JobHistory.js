@@ -53,13 +53,14 @@ export const JobHistory = () => {
       <div
         className="container-vertical"
         style={{
-          paddingTop: "15vh",
+          // marginTop: "2vh",
+          // paddingTop: "5vh",
           display: "flex",
           justifyContent: "center",
         }}
       >
-        <h1 className="h1" style={{ paddingBottom: "40px" }}>
-          💼 History
+        <h1 className="h1" style={{ padding: "30px", }}>
+          Experience
         </h1>
         <div>
           {jobHistory.map((job, index) => (
@@ -95,18 +96,18 @@ export const JobHistory = () => {
                   rel="noopener noreferrer"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <h2
+                  <h3
                     style={{
                       margin: "0",
-                      marginBottom: "10px",
+                      marginBottom: "5px",
                     }}
                   >
                     {job.company}
-                  </h2>
+                  </h3>
                 </a>
-                <h3 style={{ margin: "0", marginBottom: "5px" }}>
+                <h4 style={{ margin: "0", marginBottom: "5px" }}>
                   {job.position}
-                </h3>
+                </h4>
                 <p
                   className="job-dates"
                   style={{ margin: "0", marginBottom: "5px" }}

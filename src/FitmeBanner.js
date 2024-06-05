@@ -1,13 +1,13 @@
 import React from "react";
-import "./FitmeBanner.css";
+import "./Banner.css";
 import fitmeLogo from "./assets/fitmeLogo.png";
 import demoVideo from "./assets/profileOverlayed.mp4";
 import demoVideoPlaceholder from "./assets/profileOverlayedStillCompressed.jpg";
 import "./diagonal.css"
-const appIconSize = 7;
+const appIconSize = 6;
 
 function Home() {
-  const [containerHeight, setContainerHeight] = React.useState("60vh"); // You can change this to 40vh, 30vh, etc.
+  const [containerHeight, setContainerHeight] = React.useState("50vh"); // You can change this to 40vh, 30vh, etc.
 
   function scrollToTop() {
     window.scrollTo(0, 0);
@@ -16,7 +16,7 @@ function Home() {
   return (
     <div
       className="container-horizontal"
-      style={{ height: containerHeight, marginTop: "7.5vh" }}
+      style={{ height: containerHeight, marginTop: "7.3vh" }}
     >
       <div
         style={{
@@ -45,26 +45,26 @@ function Home() {
             }}
             alt="Fitme logo"
           />
-          <p className="text" style={{ fontSize: "64px" }}>
+          <p className="text" style={{ fontSize: "48px" }}>
             Fitme
           </p>
         </div>
         <a
           className="button"
           href="/#/projects/fitme"
-          style={{ fontSize: "25px" }}
+          style={{ fontSize: "22px" }}
           onClick={scrollToTop}
         >
           See the project
         </a>
       </div>
-      <div style={{ maxHeight: "50vh", marginLeft: "3vw" }}>
+      <div style={{ maxHeight: "50vh", marginLeft: "2vw" }}>
         <video
           autoPlay
           loop
           muted
           playsInline
-          style={{ maxHeight: "50vh", marginLeft: "3vw" }}
+          style={{ maxHeight: "45vh", marginLeft: "3vw" }}
           poster={demoVideoPlaceholder}
         >
           <source src={demoVideo} type="video/mp4" />

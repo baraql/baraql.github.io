@@ -15,7 +15,8 @@ const vh = Math.max(
   window.innerHeight || 0
 );
 
-if (vw > vh) {
+// if (vw > vh) {
+if (true) {
   ReactDOM.render(
     <React.StrictMode>
       <HashRouter basename="/">
