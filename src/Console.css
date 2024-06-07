@@ -1,0 +1,12 @@
+.consoleInputBox {
+    font-family: monospace;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 157px;
+    font-size: 27px;
+    z-index: 1;
+  }

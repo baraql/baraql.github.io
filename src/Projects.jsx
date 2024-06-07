@@ -5,7 +5,8 @@ import Vimeo from "@u-wave/react-vimeo";
 import demoVideo from "./assets/profileOverlayed.mp4";
 import demoVideoPlaceholder from "./assets/profileOverlayedStillCompressed.jpg";
 import fitmeLogo from "./assets/fitmeLogo.png";
-import diagnosyAvatar from "./assets/diagnosy-avatar-speaking.png"
+import diagnosyAvatar from "./assets/diagnosy-avatar-speaking.png";
+
 const appIconSize = 5.5;
 const projects = [
   {
@@ -16,9 +17,8 @@ const projects = [
         text: "Medium Article",
         href: "https://medium.com/@baraq/classifying-song-genres-with-machine-learning-37258250504a",
       },
-      // Additional buttons can be added here
     ],
-    media: <img src={SpotifyMLVis} alt="Spotify Visualization" style={{ height: "325px" }} />,
+    media: <img src={SpotifyMLVis} alt="Spotify Visualization" style={{ width: '100%', height: 'auto' }} />,
   },
   {
     title: "AI Robot",
@@ -33,57 +33,57 @@ const projects = [
         href: "https://github.com/baraql/ai-maze-solver",
       },
     ],
-    media: <div>
+    media: (
+      <div className="vimeo-wrapper">
       <iframe
         src="https://player.vimeo.com/video/950581264?autoplay=1&muted=1&loop=1"
-        width="500"
-        height="360"
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen
         title="Vimeo Video"
+        style={{ width: '100%', height: '100%', border: 'none', margin: 0, padding: 0, }}
       ></iframe>
-    </div>,
+    </div>    
+    ),
   },
-  {
-    title: "Diagnosy",
-    description: "A chatbot for home diagnosis and medical advice.",
-    buttons: [
-      {
-        text: "Slideshow",
-        href: "https://drive.google.com/file/d/1npgPcY0j-IJ5vEYi-eu4uFSqrCohgzDp/view?usp=sharing",
-      },
-      {
-        text: "Code",
-        href: "https://github.com/nacho-bolanos/Diagnosy/tree/main",
-      },
-      // Additional buttons can be added here
-    ],
-    media: <img src={diagnosyAvatar} alt="Diagnosy Avatar" style={{ height: "250px", margin: "100px" }} />,
-  },
-  {
-    title: "Fitme",
-    description: "Mobile ecommerce platform and social media.",
-    buttons: [
-      {
-        text: "See the project",
-        href: "/#/projects/fitme",
-      },
-    ],
-    media:
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        style={{ maxHeight: "400px", marginRight: "100px", marginLeft: "100px" }}
-        poster={demoVideoPlaceholder}
-      >
-        <source src={demoVideo} type="video/mp4" />
-      </video>,
-    icon: fitmeLogo,
-  },
-  // Add more project objects as needed
+  // {
+  //   title: "Diagnosy",
+  //   description: "A chatbot for home diagnosis and medical advice.",
+  //   buttons: [
+  //     {
+  //       text: "Slideshow",
+  //       href: "https://drive.google.com/file/d/1npgPcY0j-IJ5vEYi-eu4uFSqrCohgzDp/view?usp=sharing",
+  //     },
+  //     {
+  //       text: "Code",
+  //       href: "https://github.com/nacho-bolanos/Diagnosy/tree/main",
+  //     },
+  //   ],
+  //   media: <img src={diagnosyAvatar} alt="Diagnosy Avatar" style={{ height: "250px", margin: "100px" }} />,
+  // },
+  // {
+  //   title: "Fitme",
+  //   description: "Mobile ecommerce platform and social media.",
+  //   buttons: [
+  //     {
+  //       text: "See the project",
+  //       href: "/#/projects/fitme",
+  //     },
+  //   ],
+  //   media: (
+  //     <video
+  //       autoPlay
+  //       loop
+  //       muted
+  //       playsInline
+  //       style={{ maxHeight: "400px", marginRight: "100px", marginLeft: "100px" }}
+  //       poster={demoVideoPlaceholder}
+  //     >
+  //       <source src={demoVideo} type="video/mp4" />
+  //     </video>
+  //   ),
+  //   icon: fitmeLogo,
+  // },
 ];
 
 function Projects() {
@@ -98,11 +98,10 @@ function Projects() {
                   className="container-horizontal"
                   style={{
                     height: "95px",
-                    // paddingBottom: "20px",
                     display: "flex",
                     alignItems: "center",
                     marginRight: "20px",
-                    justifyContent: "flex-start"
+                    justifyContent: "flex-start",
                   }}
                 >
                   <img
@@ -139,9 +138,8 @@ function Projects() {
           </div>
           {index < projects.length - 1 && <div className="divider"></div>}
         </div>
-      ))
-      }
-    </div >
+      ))}
+    </div>
   );
 }
 

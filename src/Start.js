@@ -1,13 +1,30 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Draggable from "react-draggable";
 import "./Start.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Console from "./Console";
 import face from "./assets/face.png";
 import { Link } from "react-router-dom";
 import "./rainbow.css";
 import TextEdit from "./TextEdit";
+
+// TODO: ARRANGE DRAGGABLES WITH AND TRANSFORMS
 function Start() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="rainbowWrapper diagonal-bottom">
       <div className="logoWrapper">
@@ -16,43 +33,31 @@ function Start() {
           baraq{" "}
         </Link>
       </div>
-      <Draggable
-      // style={{ position: "absolute" }}
-      // defaultPosition={{
-      //   x: window.innerWidth / 5,
-      //   y: window.innerHeight * 0.3,
-      // }}
-      >
-        <div className="textedit-draggable-child">
-          <TextEdit />
-        </div>
-      </Draggable>
+      <div className="center-wrapper">
+        <Draggable>
+          <div className="textedit-draggable-child">
+            <TextEdit />
+          </div>
+        </Draggable>
 
-      <Draggable
-      // defaultPosition={{
-      //   x: window.innerWidth / 2.3,
-      //   y: -(window.innerWidth * 0.21) + window.innerHeight * 0.5,
-      // }}
-      >
-        <div className="console-wrapper console-draggable-child">
-          <Console />
-        </div>
-      </Draggable>
+        {windowWidth >= 850 && (
+          <Draggable>
+            <div className="console-wrapper console-draggable-child">
+              <Console />
+            </div>
+          </Draggable>
+        )}
 
-      <Draggable
-      // defaultPosition={{
-      //   x: window.innerWidth / 2.3,
-      //   y: -(window.innerWidth * 0.44) + window.innerHeight * 0.125,
-      // }}
-      >
-        <div className="face-wrapper">
-          <img
-            src={face}
-            className="no-drag-image face-image"
-            alt="Professional headshot of Baraq Lipshitz"
-          />
-        </div>
-      </Draggable>
+        <Draggable>
+          <div className="face-wrapper">
+            <img
+              src={face}
+              className="no-drag-image face-image"
+              alt="Professional headshot of Baraq Lipshitz"
+            />
+          </div>
+        </Draggable>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useLayoutEffect } from "react";
-import { TextInput } from "react-native";
+import { TextInput, StyleSheet, Dimensions } from "react-native";
 import Typewriter from "typewriter-effect";
+import "./Console.css";
 
 const downloadResume = () => {
   window.open(
@@ -25,23 +26,49 @@ function AutofocusingTextInput(props) {
     cursorFocus();
   }, []);
 
+  // Get screen width
+  const screenWidth = Dimensions.get('window').width;
+
+  // Conditional styles based on screen width
+  // const inputBoxStyles = [
+  //   styles.consoleInputBox,
+  //   screenWidth < 850 && styles.consoleInputBoxSmallScreen,
+  // ];
+
+  const inputStyle = {
+    outline: 'none',
+    color: 'white',
+    fontFamily: 'monospace',
+    border: 'none',
+    outlineColor: 'none',
+    padding: 0,
+    position: "absolute",
+    marginTop: '-10px', 
+    // paddingBottom: "3vw",
+    marginLeft: '157px',
+    fontSize: "27px",
+    zIndex: 1,
+  }
+  
+  const inputStyleSmallScreen = {
+    fontSize: '16px', // Example of a different style for small screens
+    marginLeft: 10, // Adjust as needed for small screens
+    marginLeft: '94px',
+    marginTop: '-5.5px', 
+  };
+
+  const combinedInputStyle = screenWidth < 850 
+    ? { ...inputStyle, ...inputStyleSmallScreen }
+    : inputStyle;
+
   return (
     <TextInput
       ref={inputRef}
       id="consoleTextInput"
-      style={{
-        fontFamily: "monospace",
-        color: "white",
-        border: "none",
-        outline: "none",
-        padding: 0,
-        position: "absolute",
-        marginTop: "-10px",
-        // paddingBottom: "3vw",
-        marginLeft: "157px",
-        fontSize: "27px",
-        zIndex: "1",
-      }}
+      style={combinedInputStyle} // Apply conditional styles here
+      // style={{color: 'white',
+      //   outline: 'none'
+      // }}
       caretHidden="true"
       variant="standard"
       placeholder=""
@@ -55,11 +82,9 @@ function AutofocusingTextInput(props) {
           downloadResume();
         } else if (props.inputText.includes("projects")) {
           window.scrollBy(0, window.innerHeight * 1.2 - window.scrollY);
-        }
-        else if (props.inputText.includes("experience")) {
+        } else if (props.inputText.includes("experience")) {
           window.scrollBy(0, window.innerHeight * 2.4 - window.scrollY);
-        }
-        else {
+        } else {
           for (const path of paths) {
             if (formattedInputText.includes(path)) {
               window.location.href = "/#/" + path;
@@ -84,76 +109,16 @@ function Console() {
   var [showInput, setShowInput] = useState(false);
   var [inputText, setInputText] = useState("");
   return (
-    <div
-      className="codebox-input code-font"
-      style={{
-        backgroundColor: "#1e1e1e",
-        borderRadius: "14px",
-        paddingBottom: "51px",
-        width: "599px",
-        height: "342px",
-        boxShadow: "17px 17px 43px #1a1a1a",
-        zIndex: "1",
-        lineHeight: "0.5",
-      }}
-    >
-      <div
-        className="flex-row-container"
-        style={{
-          backgroundColor: "#403434",
-          minHeight: "31px",
-          borderTopLeftRadius: "14px",
-          borderTopRightRadius: "14px",
-          margin: "auto",
-        }}
-      >
-        <span
-          style={{
-            marginTop: "auto",
-            marginBottom: "auto",
-            marginLeft: "9px",
-            height: "15px",
-            width: "15px",
-            backgroundColor: "#FF605C",
-            borderRadius: "50%",
-            display: "inline-block",
-          }}
-        ></span>
-        <span
-          style={{
-            marginTop: "auto",
-            marginBottom: "auto",
-            marginLeft: "9px",
-            height: "15px",
-            width: "15px",
-            backgroundColor: "#FFBD44",
-            borderRadius: "50%",
-            display: "inline-block",
-          }}
-        ></span>
-        <span
-          style={{
-            marginTop: "auto",
-            marginBottom: "auto",
-            marginLeft: "9px",
-            height: "15px",
-            width: "15px",
-            backgroundColor: "#00CA4E",
-            borderRadius: "50%",
-            display: "inline-block",
-          }}
-        ></span>
+    <div className="codebox-input code-font">
+      <div className="flex-row-container header-bar">
+        <span className="header-button red"></span>
+        <span className="header-button yellow"></span>
+        <span className="header-button green"></span>
       </div>
-      <div
-        style={{
-          paddingTop: "26px",
-          paddingLeft: "14px",
-        }}
-      >
+      <div className="typewriter-container">
         <Typewriter
           options={{
             autoStart: true,
-            /* cursor: "▊", */
           }}
           onInit={(typewriter) => {
             typewriter
@@ -165,21 +130,10 @@ function Console() {
           }}
         />
 
-        {/* TODO custom block cursor */}
         {showInput ? (
-          <div
-            style={{
-              // paddingTop: "0.8vw",
-            }}
-          >
+          <div>
             {inputText === "" ? (
-              <div
-                className="overlayedPlaceholder"
-                style={{
-                  // paddingTop: "0.70vw",
-                  paddingLeft: "157px",
-                }}
-              >
+              <div className="overlayedPlaceholder">
                 <div className="flex-row-container">
                   <Typewriter
                     options={{
@@ -193,13 +147,7 @@ function Console() {
               </div>
             ) : null}
             <div className="flex-row-container">
-              <div
-                style={{
-                  // paddingTop: "0.75vw",
-                }}
-              >
-                baraq ~ %
-              </div>
+              <div>baraq ~ %</div>
               <AutofocusingTextInput
                 inputText={inputText}
                 setInputText={setInputText}

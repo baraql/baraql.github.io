@@ -28,7 +28,6 @@
     flex: 1;
     text-align: left;
     margin-right: 20px;
-    /* Adjust spacing between text and media */
 }
 
 .title {
@@ -47,14 +46,12 @@
 
 .buttons-container {
     margin-bottom: 20px;
-    /* Add spacing between buttons and media */
 }
 
 .button {
     font-size: 18px;
     margin-top: 12px;
     margin-right: 10px;
-    /* Added margin-right for spacing between buttons */
     text-decoration: none;
     color: black;
     border: 2px solid black;
@@ -75,10 +72,56 @@
 .media-container {
     display: flex;
     align-items: center;
+    width: 560px;
+    /* height: 500px; */
 }
 
 .divider {
     border-bottom: 2px solid #ddd;
     margin: 0 20px;
-    /* Optional: Adjust margin to control the spacing of the divider */
+}
+
+.vimeo-wrapper {
+    width: 560px;
+    height: 500px;
+}
+
+@media (max-width: 850px) {
+    .project-content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .text-container {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .buttons-container {
+        text-align: center;
+    }
+
+    .vimeo-wrapper {
+        width: 560px;
+        height: 200px;
+    }
+
+    .media-container {
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        width: 400px;
+        height: auto;
+    }
 }
