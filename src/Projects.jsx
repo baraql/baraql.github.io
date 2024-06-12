@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "AI Robot",
-    description: "Won first place in NYU AI competition out of 50. Used Visual Place Recognition and obstacle mapping with monocular depth estimation.",
+    description: "Won first place in an NYU AI competition out of 50.",
     buttons: [
       {
         text: "Presentation",
