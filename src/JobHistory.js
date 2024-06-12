@@ -4,14 +4,34 @@ import "./diagonal.css";
 import PayoneerLogo from "./assets/job-history/payoneer.png";
 import ForbesLogo from "./assets/job-history/forbes.png";
 import NYULogo from "./assets/job-history/nyu.png";
+import stealth from "./assets/job-history/stealth.jpeg";
+import eth from "./assets/job-history/eth.png";
 
 export const JobHistory = () => {
   const jobHistory = [
     {
+      company: "ETH Zürich",
+      position: "MSc. CS, Machine Intelligence",
+      startDate: "September 2024",
+      endDate: "May 2026",
+      description: "Machine Learning",
+      logo: eth,
+      link: "https://www.nyu.edu/life/information-technology/research-computing-services/research-data-and-tools/high-speed-research-network-hsrn.html",
+    },
+    {
+      company: "Stealth",
+      position: "Machine Learning Engineer, Investment Platform",
+      startDate: "May 2024",
+      endDate: "Present",
+      description: "Machine Learning, LLMs",
+      logo: stealth,
+      link: "https://www.nyu.edu/life/information-technology/research-computing-services/research-data-and-tools/high-speed-research-network-hsrn.html",
+    },
+    {
       company: "High Speed Research Network",
       position: "Team Lead, Software Engineer",
       startDate: "September 2023",
-      endDate: "Present",
+      endDate: "May 2024",
       description: "C++, Network engineering",
       logo: NYULogo,
       link: "https://www.nyu.edu/life/information-technology/research-computing-services/research-data-and-tools/high-speed-research-network-hsrn.html",
@@ -46,20 +66,10 @@ export const JobHistory = () => {
   ];
 
   return (
-    <div
-      className="diagonal-top"
-      style={{ backgroundColor: "#f1f1f1", width: "100vw", minHeight: "100vh" }}
-    >
-      <div
-        className="container-vertical"
-        style={{
-          // marginTop: "2vh",
-          // paddingTop: "5vh",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <h1 className="h1" style={{ padding: "30px", }}>
+    <div className="diagonal-top">
+      <div className="experience-inner-background">
+      <div className="container-vertical">
+        <h1 className="h1">
           Experience
         </h1>
         <div>
@@ -67,24 +77,11 @@ export const JobHistory = () => {
             <div
               key={index}
               className="container-horizontal"
-              style={{
-                paddingBottom: "90px",
-                alignItems: "center",
-                // width: "42.5%",
-                justifyContent: "start",
-                height: "120px"
-              }}
             >
-              <div className="company-logo" style={{ paddingRight: "30px" }}>
+              <div className="company-logo">
                 <a href={job.link} target="_blank" rel="noopener noreferrer">
                   <img
                     src={job.logo}
-                    style={{
-                      width: "120px",
-                      height: "100%",
-                      borderRadius: "10px",
-                      border: "1px solid lightGray",
-                    }}
                     alt={job.company + " logo"}
                   />
                 </a>
@@ -96,29 +93,22 @@ export const JobHistory = () => {
                   rel="noopener noreferrer"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <h3
-                    style={{
-                      margin: "0",
-                      marginBottom: "5px",
-                    }}
-                  >
+                  <h3>
                     {job.company}
                   </h3>
                 </a>
-                <h4 style={{ margin: "0", marginBottom: "5px" }}>
+                <h4>
                   {job.position}
                 </h4>
-                <p
-                  className="job-dates"
-                  style={{ margin: "0", marginBottom: "5px" }}
-                >
+                <p className="job-dates">
                   {job.startDate} - {job.endDate}
                 </p>
-                <p style={{ margin: "0" }}>{job.description}</p>
+                <p>{job.description}</p>
               </div>
             </div>
           ))}
         </div>
+      </div>
       </div>
     </div>
   );

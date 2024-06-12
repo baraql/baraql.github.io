@@ -60,7 +60,7 @@ function Home() {
           <FitmeBanner />
         </div> */}
       </div>
-      {/* <JobHistory /> */}
+      <JobHistory />
     </div >
   );
 }

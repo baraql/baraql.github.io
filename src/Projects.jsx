@@ -7,7 +7,6 @@ import demoVideoPlaceholder from "./assets/profileOverlayedStillCompressed.jpg";
 import fitmeLogo from "./assets/fitmeLogo.png";
 import diagnosyAvatar from "./assets/diagnosy-avatar-speaking.png";
 
-const appIconSize = 5.5;
 const projects = [
   {
     title: "Song Classification",
@@ -46,44 +45,44 @@ const projects = [
     </div>    
     ),
   },
-  // {
-  //   title: "Diagnosy",
-  //   description: "A chatbot for home diagnosis and medical advice.",
-  //   buttons: [
-  //     {
-  //       text: "Slideshow",
-  //       href: "https://drive.google.com/file/d/1npgPcY0j-IJ5vEYi-eu4uFSqrCohgzDp/view?usp=sharing",
-  //     },
-  //     {
-  //       text: "Code",
-  //       href: "https://github.com/nacho-bolanos/Diagnosy/tree/main",
-  //     },
-  //   ],
-  //   media: <img src={diagnosyAvatar} alt="Diagnosy Avatar" style={{ height: "250px", margin: "100px" }} />,
-  // },
-  // {
-  //   title: "Fitme",
-  //   description: "Mobile ecommerce platform and social media.",
-  //   buttons: [
-  //     {
-  //       text: "See the project",
-  //       href: "/#/projects/fitme",
-  //     },
-  //   ],
-  //   media: (
-  //     <video
-  //       autoPlay
-  //       loop
-  //       muted
-  //       playsInline
-  //       style={{ maxHeight: "400px", marginRight: "100px", marginLeft: "100px" }}
-  //       poster={demoVideoPlaceholder}
-  //     >
-  //       <source src={demoVideo} type="video/mp4" />
-  //     </video>
-  //   ),
-  //   icon: fitmeLogo,
-  // },
+  {
+    title: "Diagnosy",
+    description: "A chatbot for home diagnosis and medical advice.",
+    buttons: [
+      {
+        text: "Slideshow",
+        href: "https://drive.google.com/file/d/1npgPcY0j-IJ5vEYi-eu4uFSqrCohgzDp/view?usp=sharing",
+      },
+      {
+        text: "Code",
+        href: "https://github.com/nacho-bolanos/Diagnosy/tree/main",
+      },
+    ],
+    media: <img src={diagnosyAvatar} alt="Diagnosy Avatar" className="diagnosy-image"/>,
+  },
+  {
+    title: "Fitme",
+    description: "Mobile ecommerce platform and social media.",
+    buttons: [
+      // {
+      //   text: "See the project",
+      //   href: "/#/projects/fitme",
+      // },
+    ],
+    media: (
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{ maxHeight: "400px", marginRight: "100px", marginLeft: "100px" }}
+        poster={demoVideoPlaceholder}
+      >
+        <source src={demoVideo} type="video/mp4" />
+      </video>
+    ),
+    icon: fitmeLogo,
+  },
 ];
 
 function Projects() {
@@ -95,22 +94,16 @@ function Projects() {
             <div className="text-container">
               {item.icon && (
                 <div
-                  className="container-horizontal"
+                  className="container-horizontal fitme-wrapper"
                   style={{
-                    height: "95px",
                     display: "flex",
                     alignItems: "center",
                     marginRight: "20px",
-                    justifyContent: "flex-start",
                   }}
                 >
                   <img
                     src={item.icon}
-                    style={{
-                      borderRadius: "20.5px",
-                      marginRight: "5px",
-                      height: "100%",
-                    }}
+                    className="icon"
                     alt={`${item.title} logo`}
                   />
                   <p className="title" style={{ fontSize: "48px" }}>
@@ -120,6 +113,7 @@ function Projects() {
               )}
               {!item.icon && <p className="title">{item.title}</p>}
               <p className="subtitle">{item.description}</p>
+              {item.buttons.length > 0 &&
               <div className="buttons-container">
                 {item.buttons.map((button, btnIndex) => (
                   <a
@@ -132,7 +126,7 @@ function Projects() {
                     {button.text}
                   </a>
                 ))}
-              </div>
+              </div>}
             </div>
             <div className="media-container">{item.media}</div>
           </div>
