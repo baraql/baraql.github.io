@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "AI Robot",
-    description: "Visual Place Recognition and obstacle mapping with monocular depth estimation. First-place NYU competition winner out of 50.",
+    description: "Won first place in NYU AI competition out of 50. Used Visual Place Recognition and obstacle mapping with monocular depth estimation.",
     buttons: [
       {
         text: "Presentation",
@@ -47,7 +47,7 @@ const projects = [
   },
   {
     title: "Diagnosy",
-    description: "A chatbot for home diagnosis and medical advice.",
+    description: "AI chatbot for home diagnosis and medical advice.",
     buttons: [
       {
         text: "Slideshow",
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     title: "Fitme",
-    description: "Mobile ecommerce platform and social media.",
+    description: "Mobile ecommerce and social media platform.",
     buttons: [
       // {
       //   text: "See the project",
