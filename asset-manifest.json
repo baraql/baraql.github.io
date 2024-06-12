@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "./static/css/main.16c686d4.css",
-    "main.js": "./static/js/main.2be8e9d3.js",
-    "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "main.css": "./static/css/main.8cff743a.css",
+    "main.js": "./static/js/main.bf799d36.js",
+    "static/js/453.ace21015.chunk.js": "./static/js/453.ace21015.chunk.js",
     "static/media/profileOverlayed.mp4": "./static/media/profileOverlayed.4ba6035e9a6d3fc17e4d.mp4",
-    "static/media/fitmeSC1.png": "./static/media/fitmeSC1.82344ef1bdd1eba584b6.png",
+    "static/media/diagnosy-avatar-speaking.png": "./static/media/diagnosy-avatar-speaking.49414b011eeb31564deb.png",
     "static/media/face.png": "./static/media/face.e45ddefa6c550088ed89.png",
-    "static/media/fitmeSC2.png": "./static/media/fitmeSC2.3f4b124679e9bb7fa3c8.png",
+    "static/media/spotifyMLVis.png": "./static/media/spotifyMLVis.0c8b8ba7afdbdf650be7.png",
     "static/media/profileOverlayedStillCompressed.jpg": "./static/media/profileOverlayedStillCompressed.84e3ff3b43cbaa7412dd.jpg",
     "static/media/fitmeLogo.png": "./static/media/fitmeLogo.faaf0c3dcfad0e40a5fb.png",
-    "static/media/fTrainIcon.png": "./static/media/fTrainIcon.c5f2aac9737bc0da2f58.png",
     "static/media/payoneer.png": "./static/media/payoneer.3fc91a96a3439ed529b7.png",
     "static/media/nyu.png": "./static/media/nyu.74292e3d8dd7aa0444cb.png",
     "static/media/forbes.png": "./static/media/forbes.4ceda81902cfd113af0a.png",
-    "static/media/appstorebutton.svg": "./static/media/appstorebutton.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "./index.html",
-    "main.16c686d4.css.map": "./static/css/main.16c686d4.css.map",
-    "main.2be8e9d3.js.map": "./static/js/main.2be8e9d3.js.map",
-    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
+    "main.8cff743a.css.map": "./static/css/main.8cff743a.css.map",
+    "main.bf799d36.js.map": "./static/js/main.bf799d36.js.map",
+    "453.ace21015.chunk.js.map": "./static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16c686d4.css",
-    "static/js/main.2be8e9d3.js"
+    "static/css/main.8cff743a.css",
+    "static/js/main.bf799d36.js"
   ]
 }
