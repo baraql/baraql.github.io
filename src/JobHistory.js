@@ -16,7 +16,7 @@ export const JobHistory = () => {
       endDate: "May 2026",
       description: "Machine Learning",
       logo: eth,
-      link: "https://www.nyu.edu/life/information-technology/research-computing-services/research-data-and-tools/high-speed-research-network-hsrn.html",
+      link: "https://ethz.ch/en.html",
     },
     {
       company: "Stealth",
@@ -25,7 +25,6 @@ export const JobHistory = () => {
       endDate: "Present",
       description: "Machine Learning, LLMs",
       logo: stealth,
-      link: "https://www.nyu.edu/life/information-technology/research-computing-services/research-data-and-tools/high-speed-research-network-hsrn.html",
     },
     {
       company: "High Speed Research Network",
