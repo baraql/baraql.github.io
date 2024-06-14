@@ -455,12 +455,12 @@ pre.caret-block>span {
   }
 
   .textedit-draggable-child {
-    top: calc(65% - 180px);
+    top: calc(60% - 180px);
     left: calc(75% - 282px);
   }
 
   .face-wrapper {
-    top: calc(39% - 106.875px);
+    top: calc(34% - 106.875px);
     left: calc(85% - 106.875px);
   }
 }

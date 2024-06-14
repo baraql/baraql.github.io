@@ -106,6 +106,12 @@
     width: 80vw;
     padding-bottom: 50px;
   }
+
+  .text-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
   /* .container-vertical {
     width: fit-content;
   } */

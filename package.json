@@ -13,6 +13,7 @@
     "firebase": "^9.15.0",
     "framer-motion": "^6.2.8",
     "ga-4-react": "^0.1.281",
+    "intersection-observer": "^0.12.2",
     "memfs": "^4.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

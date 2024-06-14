@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import SpotifyMLVis from "./assets/spotifyMLVis.png";
 import Vimeo from "@u-wave/react-vimeo";
@@ -34,15 +34,15 @@ const projects = [
     ],
     media: (
       <div className="vimeo-wrapper">
-      <iframe
-        src="https://player.vimeo.com/video/950581264?autoplay=1&muted=1&loop=1"
-        frameBorder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowFullScreen
-        title="Vimeo Video"
-        style={{ width: '100%', height: '100%', border: 'none', margin: 0, padding: 0, }}
-      ></iframe>
-    </div>    
+        <iframe
+          src="https://player.vimeo.com/video/950581264?autoplay=1&muted=1&loop=1"
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          title="Vimeo Video"
+          style={{ width: '100%', height: '100%', border: 'none', margin: 0, padding: 0 }}
+        ></iframe>
+      </div>
     ),
   },
   {
@@ -63,29 +63,23 @@ const projects = [
   {
     title: "Fitme",
     description: "Mobile ecommerce and social media platform.",
-    buttons: [
-      // {
-      //   text: "See the project",
-      //   href: "/#/projects/fitme",
-      // },
-    ],
-    media: (
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        style={{ maxHeight: "400px", marginRight: "100px", marginLeft: "100px" }}
-        poster={demoVideoPlaceholder}
-      >
-        <source src={demoVideo} type="video/mp4" />
-      </video>
-    ),
+    buttons: [],
+    media: null,
     icon: fitmeLogo,
   },
 ];
 
 function Projects() {
+  const [isFitmeVideoLoaded, setIsFitmeVideoLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsFitmeVideoLoaded(true);
+    }, 0); // Delay can be adjusted if necessary
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="projects-container">
       {projects.map((item, index) => (
@@ -113,22 +107,37 @@ function Projects() {
               )}
               {!item.icon && <p className="title">{item.title}</p>}
               <p className="subtitle">{item.description}</p>
-              {item.buttons.length > 0 &&
-              <div className="buttons-container">
-                {item.buttons.map((button, btnIndex) => (
-                  <a
-                    key={btnIndex}
-                    className="button"
-                    href={button.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {button.text}
-                  </a>
-                ))}
-              </div>}
+              {item.buttons.length > 0 && (
+                <div className="buttons-container">
+                  {item.buttons.map((button, btnIndex) => (
+                    <a
+                      key={btnIndex}
+                      className="button"
+                      href={button.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {button.text}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
-            <div className="media-container">{item.media}</div>
+            <div className="media-container">
+              {item.media}
+              {item.title === "Fitme" && isFitmeVideoLoaded && (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  style={{ maxHeight: "400px", marginRight: "100px", marginLeft: "100px" }}
+                  poster={demoVideoPlaceholder}
+                >
+                  <source src={demoVideo} type="video/mp4" />
+                </video>
+              )}
+            </div>
           </div>
           {index < projects.length - 1 && <div className="divider"></div>}
         </div>
