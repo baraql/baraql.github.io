@@ -83,7 +83,7 @@ function AutofocusingTextInput(props) {
         } else if (props.inputText.includes("projects")) {
           window.scrollBy(0, window.innerHeight * 1.2 - window.scrollY);
         } else if (props.inputText.includes("experience")) {
-          window.scrollBy(0, window.innerHeight * 2.4 - window.scrollY);
+          window.scrollBy(0, window.innerHeight * 3.1 - window.scrollY);
         } else {
           for (const path of paths) {
             if (formattedInputText.includes(path)) {

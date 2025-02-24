@@ -10,9 +10,9 @@ function TextEdit() {
 
             <div className="textedit-content" style={{ marginLeft: "5px" }}>
                 <p>/*</p>
-                <p>* Incoming ETH Zürich MSc.</p>
-                <p>* student in CS and ML</p>
-                <p>* NYU CS alum </p>
+                <p>* ETH Zürich MSc student</p>
+                <p>* Machine Learning & CS </p>
+                <p>* NYU Alum, Summa Cum Laude </p>
                 <p>
                     *{" "}
                     <a

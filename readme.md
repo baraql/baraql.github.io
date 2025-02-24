@@ -1,4 +1,4 @@
-# Setup
+# Setup before anything
 install dependencies:
 ```npm i```
 

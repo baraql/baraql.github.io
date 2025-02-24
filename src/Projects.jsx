@@ -49,12 +49,12 @@ const projects = [
     title: "Diagnosy",
     description: "AI chatbot for home diagnosis and medical advice.",
     buttons: [
+      // {
+      //   text: "Slideshow",
+      //   href: "https://drive.google.com/file/d/1npgPcY0j-IJ5vEYi-eu4uFSqrCohgzDp/view?usp=sharing",
+      // },
       {
-        text: "Slideshow",
-        href: "https://drive.google.com/file/d/1npgPcY0j-IJ5vEYi-eu4uFSqrCohgzDp/view?usp=sharing",
-      },
-      {
-        text: "Code",
+        text: "Github",
         href: "https://github.com/nacho-bolanos/Diagnosy/tree/main",
       },
     ],
