@@ -9,7 +9,7 @@ import diagnosyAvatar from "./assets/diagnosy-avatar-speaking.png";
 
 const projects = [
   {
-    title: "Song Classification",
+    title: "Song Classification ML Pipeline",
     description: "A machine learning model to predict genres.",
     buttons: [
       {
@@ -20,7 +20,7 @@ const projects = [
     media: <img src={SpotifyMLVis} alt="Spotify Visualization" style={{ width: '100%', height: 'auto' }} />,
   },
   {
-    title: "AI Robot",
+    title: "Robot Vision Competition",
     description: "Won first place in an NYU AI competition out of 50.",
     buttons: [
       {
@@ -47,7 +47,7 @@ const projects = [
   },
   {
     title: "Diagnosy",
-    description: "AI chatbot for home diagnosis and medical advice.",
+    description: "LLM chatbot app tailored for medical advice.",
     buttons: [
       // {
       //   text: "Slideshow",
