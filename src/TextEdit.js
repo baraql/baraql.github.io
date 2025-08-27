@@ -17,11 +17,11 @@ function TextEdit() {
                     *{" "}
                     <a
                         className="link"
-                        href="mailto:baraq@nyu.edu"
+                        href="mailto:baraq.lipshitz@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        baraq@nyu.edu
+                        baraq.lipshitz@gmail.com
                     </a>
                 </p>
                 <p>
