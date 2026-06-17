@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Projects.css";
 import SpotifyMLVis from "./assets/spotifyMLVis.png";
-import Vimeo from "@u-wave/react-vimeo";
 import demoVideo from "./assets/profileOverlayed.mp4";
 import demoVideoPlaceholder from "./assets/profileOverlayedStillCompressed.jpg";
 import fitmeLogo from "./assets/fitmeLogo.png";
@@ -17,7 +16,7 @@ const projects = [
         href: "https://medium.com/@baraq/classifying-song-genres-with-machine-learning-37258250504a",
       },
     ],
-    media: <img src={SpotifyMLVis} alt="Spotify Visualization" style={{ width: '100%', height: 'auto' }} />,
+    media: <img src={SpotifyMLVis} alt="Spotify Visualization" />,
   },
   {
     title: "Robot Vision Competition",
@@ -38,9 +37,7 @@ const projects = [
           src="https://player.vimeo.com/video/950581264?autoplay=1&muted=1&loop=1"
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
           title="Vimeo Video"
-          style={{ width: '100%', height: '100%', border: 'none', margin: 0, padding: 0 }}
         ></iframe>
       </div>
     ),
@@ -58,7 +55,9 @@ const projects = [
         href: "https://github.com/nacho-bolanos/Diagnosy/tree/main",
       },
     ],
-    media: <img src={diagnosyAvatar} alt="Diagnosy Avatar" className="diagnosy-image"/>,
+    media: (
+      <img src={diagnosyAvatar} alt="Diagnosy Avatar" className="diagnosy-image" />
+    ),
   },
   {
     title: "Fitme",
@@ -87,22 +86,13 @@ function Projects() {
           <div className="project-content">
             <div className="text-container">
               {item.icon && (
-                <div
-                  className="container-horizontal fitme-wrapper"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginRight: "20px",
-                  }}
-                >
+                <div className="fitme-wrapper">
                   <img
                     src={item.icon}
                     className="icon"
                     alt={`${item.title} logo`}
                   />
-                  <p className="title" style={{ fontSize: "48px" }}>
-                    {item.title}
-                  </p>
+                  <p className="title title-fitme">{item.title}</p>
                 </div>
               )}
               {!item.icon && <p className="title">{item.title}</p>}
@@ -131,7 +121,7 @@ function Projects() {
                   loop
                   muted
                   playsInline
-                  style={{ maxHeight: "400px", marginRight: "100px", marginLeft: "100px" }}
+                  className="fitme-video"
                   poster={demoVideoPlaceholder}
                 >
                   <source src={demoVideo} type="video/mp4" />

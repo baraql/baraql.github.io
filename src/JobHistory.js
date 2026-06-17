@@ -1,4 +1,3 @@
-import React from "react";
 import "./JobHistory.css";
 import "./diagonal.css";
 import PayoneerLogo from "./assets/job-history/payoneer.png";

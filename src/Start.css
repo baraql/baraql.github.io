@@ -168,8 +168,11 @@ a.link:after {
 .overlayedPlaceholder {
   z-index: 1;
   position: absolute;
+  top: 0;
+  left: 0;
   color: #a3a3a3;
-  padding-left: 157px;
+  pointer-events: none;
+  white-space: nowrap;
 }
 
 .noselect {
@@ -236,6 +239,10 @@ pre.caret-block>span {
   z-index: 1;
   font-size: 21px;
   line-height: 0.5;
+}
+
+.textedit-content {
+  margin-left: 5px;
 }
 
 .top-console-bar {
@@ -394,10 +401,6 @@ pre.caret-block>span {
     font-size: 16px;
   }
 
-  .overlayedPlaceholder {
-    padding-left: 94px;
-  }
-
   .codebox-input {
     border-radius: 16px;
     padding-bottom: 51px;
@@ -466,7 +469,7 @@ pre.caret-block>span {
 }
 
 /* for when screen gets too long */
-/* @media (min-height: 950px) and (min-width: 1000px){ 
+/* @media (min-height: 950px) and (min-width: 1000px){
   .face-wrapper {
     top: calc(32% - 106.875px);
   }

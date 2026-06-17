@@ -8,7 +8,7 @@ function TextEdit() {
                 <span></span>
             </div>
 
-            <div className="textedit-content" style={{ marginLeft: "5px" }}>
+            <div className="textedit-content">
                 <p>/*</p>
                 <p>* ETH Zürich MSc student</p>
                 <p>* Machine Learning & CS </p>

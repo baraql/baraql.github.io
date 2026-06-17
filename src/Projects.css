@@ -6,14 +6,15 @@
 
 .project {
     width: 100%;
-    padding: 20px 0;
+    padding: 24px 0;
 }
 
 .project-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    gap: 32px;
+    padding: 24px;
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Futura', sans-serif;
@@ -27,7 +28,7 @@
 .text-container {
     flex: 1;
     text-align: left;
-    margin-right: 20px;
+    min-width: 260px;
 }
 
 .title {
@@ -73,8 +74,14 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    width: 560px;
-    /* height: 500px; */
+    flex: 0 1 560px;
+    max-width: 100%;
+}
+
+.media-container img,
+.media-container video {
+    display: block;
+    max-width: 100%;
 }
 
 .divider {
@@ -83,31 +90,50 @@
 }
 
 .vimeo-wrapper {
-    width: 560px;
-    height: 500px;
+    aspect-ratio: 16 / 10;
+    width: min(560px, 100%);
+}
+
+.vimeo-wrapper iframe {
+    border: 0;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 .diagnosy-image {
-    height: 250px; 
+    height: auto;
+    max-height: 250px;
     margin: 0px;
 }
 .fitme-wrapper {
+    align-items: center;
+    display: flex;
     height: 95px;
     justify-content: flex-start;
 }
+
+.title-fitme {
+    font-size: 48px;
+}
+
 .icon {
     border-radius: 20.9px;
     margin-right: 5px;
     height: 100%;
 }
 
-.fitme-wrapper {
-    padding-bottom: 0;
+.fitme-video {
+    max-height: 400px;
+    width: auto;
 }
 
 @media (max-width: 850px) {
     .project-content {
         flex-direction: column;
-        padding: 0;
+        gap: 20px;
+        padding: 0 20px 30px;
         padding-bottom: 30px;
     }
 
@@ -123,7 +149,8 @@
 
     .subtitle {
         font-size: 16px;
-        width: 300px;
+        max-width: 320px;
+        width: 100%;
         text-align: center;
     }
 
@@ -132,14 +159,13 @@
     }
 
     .vimeo-wrapper {
-        width: 560px;
-        height: 200px;
+        width: 100%;
     }
 
     .media-container {
-        width: 100%;
         margin-top: 20px;
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
         height: auto;
     }
 
@@ -151,9 +177,15 @@
         justify-content: center;
         height: 72px;
     }
+    .title-fitme {
+        font-size: 36px;
+    }
     .icon {
         border-radius: 15.84px;
         margin-right: 5px;
         height: 100%;
+    }
+    .fitme-video {
+        max-height: 320px;
     }
 }

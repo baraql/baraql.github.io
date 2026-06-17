@@ -1,7 +1,6 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import Draggable from "react-draggable";
 import "./Start.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Console from "./Console";
 import face from "./assets/face.png";
 import { Link } from "react-router-dom";
@@ -11,6 +10,9 @@ import TextEdit from "./TextEdit";
 // TODO: ARRANGE DRAGGABLES WITH AND TRANSFORMS
 function Start() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const textEditRef = useRef(null);
+  const consoleRef = useRef(null);
+  const faceRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,22 +36,25 @@ function Start() {
         </Link>
       </div>
       <div className="center-wrapper">
-        <Draggable>
-          <div className="textedit-draggable-child">
+        <Draggable nodeRef={textEditRef}>
+          <div ref={textEditRef} className="textedit-draggable-child">
             <TextEdit />
           </div>
         </Draggable>
 
         {windowWidth >= 850 && (
-          <Draggable>
-            <div className="console-wrapper console-draggable-child">
+          <Draggable nodeRef={consoleRef}>
+            <div
+              ref={consoleRef}
+              className="console-wrapper console-draggable-child"
+            >
               <Console />
             </div>
           </Draggable>
         )}
 
-        <Draggable>
-          <div className="face-wrapper">
+        <Draggable nodeRef={faceRef}>
+          <div ref={faceRef} className="face-wrapper">
             <img
               src={face}
               className="no-drag-image face-image"

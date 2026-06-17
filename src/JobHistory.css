@@ -22,10 +22,12 @@
 
 .container-vertical {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .container-horizontal {
+  display: flex;
   padding-bottom: 90px;
   align-items: center;
   justify-content: start;
@@ -38,7 +40,7 @@
 
 .company-logo img {
   width: 120px;
-  height: 100%;
+  height: auto;
   /* border-radius: 10px; */
   /* border: 2px solid lightGray; */
 }
